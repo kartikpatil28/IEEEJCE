@@ -1,0 +1,42 @@
+/* Navbar Styles */
+nav {
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Logo Section */
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* Hamburger Icon */
+  .hamburger-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .hamburger-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #fff;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }

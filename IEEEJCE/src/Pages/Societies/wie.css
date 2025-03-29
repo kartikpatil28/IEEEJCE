@@ -1,0 +1,151 @@
+/* General Styling */
+.wie-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .hero-left {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .hero-heading {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hero-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-placeholder {
+    width: 400px;
+    height: 300px;
+    background-color: #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Activities Section */
+  .activities-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activities-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+  }
+  
+  .activity-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .activity-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .activity-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .activity-card p {
+    font-size: 1rem;
+    color: #555;
+  }

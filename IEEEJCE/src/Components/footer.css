@@ -1,0 +1,22 @@
+/* Footer Styles */
+footer {
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Scroll to Top Button */
+  .scroll-to-top {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Social Media Icons */
+  .social-icon {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }

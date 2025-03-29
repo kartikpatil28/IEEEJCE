@@ -1,0 +1,45 @@
+.aess-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .aess-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a365d; /* Dark blue */
+    margin-bottom: 1rem;
+  }
+  
+  .aess-description {
+    font-size: 1.25rem;
+    color: #4a5568; /* Gray */
+    margin-bottom: 2rem;
+  }
+  
+  .aess-activities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .activity-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .activity-card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a365d; /* Dark blue */
+    margin-bottom: 0.5rem;
+  }
+  
+  .activity-card p {
+    font-size: 1rem;
+    color: #4a5568; /* Gray */
+  }

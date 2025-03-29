@@ -1,0 +1,391 @@
+/* cs.css - IEEE Computer Society Styles */
+
+:root {
+    --ieee-blue: #006699;
+    --ieee-dark-blue: #00557f;
+    --ieee-light-blue: #e6f3f8;
+    --ieee-accent: #ff9e1b;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --text-light: #ffffff;
+    --bg-light: #ffffff;
+    --bg-gray: #f5f5f5;
+    --border-color: #e0e0e0;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --radius: 8px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: var(--bg-light);
+    color: var(--text-primary);
+    line-height: 1.6;
+  }
+  
+  .cs-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Styles */
+  .cs-header {
+    background: linear-gradient(135deg, var(--ieee-blue) 0%, var(--ieee-dark-blue) 100%);
+    color: var(--text-light);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 5px solid var(--ieee-accent);
+  }
+  
+  .cs-logo-container {
+    margin-bottom: 1rem;
+  }
+  
+  .cs-logo {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    background-color: var(--text-light);
+    color: var(--ieee-blue);
+    border-radius: var(--radius);
+  }
+  
+  .cs-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+  }
+  
+  .cs-tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Main Content */
+  .cs-main {
+    padding: 2rem;
+  }
+  
+  .cs-section-title {
+    font-size: 1.8rem;
+    color: var(--ieee-blue);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--ieee-light-blue);
+  }
+  
+  /* About Section */
+  .cs-about {
+    margin-bottom: 3rem;
+  }
+  
+  .cs-about-text {
+    font-size: 1.1rem;
+    max-width: 900px;
+  }
+  
+  /* Cards Grid */
+  .cs-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .cs-card {
+    background-color: var(--bg-light);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
+  }
+  
+  .cs-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cs-card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cs-card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: var(--ieee-blue);
+  }
+  
+  .cs-card-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+  
+  /* Technical Content Resources Section - NEW */
+  .cs-content-resources {
+    margin-bottom: 3rem;
+  }
+  
+  .cs-content-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .cs-content-item {
+    background-color: var(--bg-light);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cs-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+  }
+  
+  .cs-content-header h3 {
+    color: var(--ieee-blue);
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  
+  .cs-content-type {
+    background-color: var(--ieee-light-blue);
+    color: var(--ieee-dark-blue);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  
+  .cs-content-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .cs-tag {
+    background-color: var(--bg-gray);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+  
+  .cs-access-btn {
+    background-color: var(--ieee-blue);
+    color: var(--text-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: auto;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cs-access-btn:hover {
+    background-color: var(--ieee-dark-blue);
+  }
+  
+  /* Gallery Section - NEW */
+  .cs-gallery {
+    margin-bottom: 3rem;
+  }
+  
+  .cs-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .cs-gallery-item {
+    background-color: var(--bg-light);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+  }
+  
+  .cs-gallery-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cs-gallery-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .cs-gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .cs-gallery-item:hover .cs-gallery-image img {
+    transform: scale(1.05);
+  }
+  
+  .cs-gallery-caption {
+    padding: 1rem;
+  }
+  
+  .cs-gallery-caption h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--ieee-dark-blue);
+  }
+  
+  .cs-gallery-caption p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+  
+  /* Publications Section */
+  .cs-publications {
+    margin-bottom: 3rem;
+  }
+  
+  .cs-publications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .cs-publication-item {
+    background-color: var(--ieee-light-blue);
+    padding: 1.25rem;
+    border-radius: var(--radius);
+    border-left: 4px solid var(--ieee-blue);
+  }
+  
+  .cs-publication-item h3 {
+    margin-bottom: 0.5rem;
+    color: var(--ieee-dark-blue);
+  }
+  
+  /* Events Section */
+  .cs-events {
+    margin-bottom: 3rem;
+  }
+  
+  .cs-events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .cs-event {
+    display: flex;
+    background-color: var(--bg-gray);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  
+  .cs-event-date {
+    background-color: var(--ieee-blue);
+    color: var(--text-light);
+    padding: 1rem;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .cs-event-details {
+    padding: 1rem;
+    flex-grow: 1;
+  }
+  
+  .cs-event-details h3 {
+    margin-bottom: 0.25rem;
+    color: var(--ieee-dark-blue);
+  }
+  
+  /* Footer */
+  .cs-footer {
+    background-color: var(--ieee-dark-blue);
+    color: var(--text-light);
+    padding: 3rem 2rem;
+  }
+  
+  .cs-footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cs-footer-col h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--ieee-accent);
+  }
+  
+  .cs-footer-col ul {
+    list-style: none;
+  }
+  
+  .cs-footer-col ul li {
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .cs-footer-col ul li:hover {
+    opacity: 1;
+  }
+  
+  .cs-copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .cs-title {
+      font-size: 2rem;
+    }
+    
+    .cs-cards-grid,
+    .cs-content-container,
+    .cs-gallery-container,
+    .cs-publications-list {
+      grid-template-columns: 1fr;
+    }
+    
+    .cs-event {
+      flex-direction: column;
+    }
+    
+    .cs-event-date {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }

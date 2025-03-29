@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+  
+  .text-blue-500:hover {
+    color: #1a202c;
+  }
+  
+  @media (min-width: 768px) {
+    .card-content {
+      padding: 2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card-content {
+      padding: 3rem;
+    }
+  }
+  
