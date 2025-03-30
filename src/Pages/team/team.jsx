@@ -1,42 +1,31 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-// import austin from "../../asset/Photos/Austin.jpg";
-// import chandan from "../../asset/Photos/Chandan.jpg";
-// import kshiti from "../../asset/Photos/Kshiti.jpg";
-// import shreedhar from "../../asset/Photos/Shreedhar.jpg";
-// import rahul from "../../asset/Photos/Rahul.jpg";
-// import abhishek from "../../asset/Photos/Abhishek.jpg";
-// import neha from "../../asset/Photos/Neha.jpg";
-// import varsha from "../../asset/Photos/Varsha.jpg";
-// import chaitra from "../../asset/Photos/Chaitra.jpg";
-// import pawan from "../../asset/Photos/pawan.jpg";
-// import siddarth from "../../asset/Photos/Siddharth.jpg";
 
 function Team() {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const teamMembers = [
     {
-      // image: austin,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346971/assets/asset/Execom/clrkcsuvnxc5y8jzfctu.jpg",
       name: "Abhishek Devarushi",
       title: "IEEE Chair",
       category: "IEEE",
     },
     {
-      // image: chandan,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743347013/assets/asset/Execom/jcxwffooc0w3uwjcnncf.jpg",
       name: "Beerappa Marannur",
       title: "IEEE Vice Chair",
       category: "IEEE",
     },
     {
-      // image: kshiti,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743347083/assets/asset/Execom/vvqjxmdtrlnqaj1pxojn.jpg",
       name: "Snehal Suryavanshi",
       title: "Secretary",
       category: "IEEE",
     },
     {
-      // image: shreedhar,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346994/assets/asset/Execom/gk2izl22vxejq7c2c9vh.jpg",
       name: "Darshan Tukkar",
       title: "Treasurer",
       category: "IEEE",
@@ -48,7 +37,7 @@ function Team() {
       category: "IEEE",
     },
     {
-      // image: abhishek,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346883/assets/asset/Execom/hulfzpinwy1penqc1m44.jpg",
       name: "Vinayak A",
       title: "Membership Coordinator",
       category: "IEEE",
@@ -56,14 +45,14 @@ function Team() {
 
     
     {
-      // image: abhishek,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346960/assets/asset/Execom/tlrdnzqvpishwvr2gxl8.jpg",
       name: "Kartik Patil",
       title: "Webmaster",
       category: "IEEE",
     },
 
     { 
-      // image: neha,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743347092/assets/asset/Execom/ij9atiiczmyzjcjwohsi.jpg",
        name: "Srushti Utturkar", 
        title: "WIE Chair",
         category: "WIE" },
@@ -74,7 +63,7 @@ function Team() {
       category: "WIE",
     },
     {
-      // image: chaitra,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346993/assets/asset/Execom/xt8oy4v2gqqsgx2iskze.jpg",
       name: "Sharada Ugare",
       title: "WIE Secretary",
       category: "WIE",
@@ -86,31 +75,31 @@ function Team() {
       category: "WIE",
     },
     {
-      // image: siddarth,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/t_samuel/assets/asset/Execom/je7dcwt4cpiibux1k982",
       name: "Samiulla Kustagi",
       title: "WIE Media Head",
       category: "WIE",
     },
     {
-      // image: siddarth,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743347091/assets/asset/Execom/xqub8zouzhv7ctkjozbq.jpg",
       name: "Muskan Dhalayat",
       title: "AESS Chair",
       category: "AESS",
     },
     {
-      // image: siddarth,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346900/assets/asset/Execom/hlhhdgyxnrszsf3tj7xj.jpg",
       name: "Radhika Lohar",
       title: "AESS Vice-Chair",
       category: "AESS",
     },
     {
-      // image: siddarth,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346921/assets/asset/Execom/icekiyu4smhk2pnqicyd.jpg",
       name: "Saniya Gijoni",
       title: "AESS Secretary",
       category: "AESS",
     },
     {
-      // image: siddarth,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/a_-90/assets/asset/Execom/mpv6rbd7q0shejyjvxdh",
       name: "Preeti Patil",
       title: "AESS Treasurer",
       category: "AESS",
@@ -122,10 +111,16 @@ function Team() {
       category: "AESS",
     },
     {
-      // image: siddarth,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/a_-90/assets/asset/Execom/wjmju6hsh2mp1s4bf2aa",
       name: "Chetan Baloji",
       title: "AESS Media Head",
       category: "AESS",
+    },
+    {
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743347074/assets/asset/Execom/bozlwppea9lgulbtvjg7.jpg",
+      name: "Shrutika",
+      title: "CS Chair",
+      category: "CS",
     },
     
   ];
@@ -265,7 +260,7 @@ function Team() {
                 <div className="w-40 h-40 rounded-full border-4 border-white overflow-hidden flex items-center justify-center bg-gray-200">
                   {/* Replace SVG with actual image */}
                   <img
-                    src="src/asset/Photos/Dr_Krupa.jpg"
+                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346346/assets/asset/Photos/anxznimgrkvbnro5pxlc.jpg"
                     alt="Dr. Krupa Rasane"
                     className="w-full h-full object-cover object-center"
                   />

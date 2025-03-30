@@ -43,31 +43,31 @@ const testimonials = [
     name: "Austin Pacheco",
     affiliation: "Electronics and Communication Engineering",
     text: "I really like how IEEE workshops connect theory to practical applications. The Arduino session helped me understand embedded systems in a way lectures never could.",
-    imgSrc: "src/asset/Photos/Austin.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346352/assets/asset/Photos/xfdro56p1dpuwxexg1db.jpg"
   },
   {
     name: "Chandan K",
     affiliation: "Electronics and Communication Engineering",
     text: "Being part of WIE has been transformative. I've found mentors who have guided my research interests and supported my growth in a male-dominated field.",
-    imgSrc: "src/asset/Photos/Chandan.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346352/assets/asset/Photos/c444pplj8hiffezsvapv.jpg"
   },
   {
     name: "Chaitra K",
     affiliation: "Electronics and Communication Engineering",
     text: "The most useful IEEE resource for me has been the technical library access. It's hands down the best benefit for research students like me.",
-    imgSrc: "src/asset/Photos/Chaitra.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346346/assets/asset/Photos/femtwssltssocvk5iisw.jpg"
   },
   {
     name: "Abhishek",
     affiliation: "Electronics and Communication Engineering",
     text: "IEEE's professional network helped me land my first internship. The industry connections through the chapter are invaluable for career growth.",
-    imgSrc: "src/asset/Photos/Abhishek.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346344/assets/asset/Photos/iqkri7jl3o4jdyq2cqyl.jpg"
   },
   {
     name: "Kshiti",
     affiliation: "Electronics and Communication Engineering",
     text: "The IEEE workshops on machine learning were exactly what I needed to bridge the gap between theory and implementation. Now I'm leading our college's AI team.",
-    imgSrc: "src/asset/Photos/Kshiti.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346351/assets/asset/Photos/aswtjgnsg5j3zen1fw37.jpg"
   },
 ];
 
@@ -77,31 +77,31 @@ const moreTestimonials = [
     name: "Narayan Sabale",
     affiliation: "Electronics and Communication Engineering",
     text: "The Cursor tab completion in IEEE coding workshops is occasionally so helpful it defies reality - about ~25% of the time it's anticipating exactly what I want to do.",
-    imgSrc: "src/asset/Photos/Narayan.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346344/assets/asset/Photos/xebkmak0k6ihtpsnzuwb.jpg"
   },
   {
     name: "Rahul Halkarni",
     affiliation: "Electronics and Communication Engineering",
     text: "It's amazing having IEEE as a programming partner, and is an incredible accelerator for me and my team's projects in robotics competitions.",
-    imgSrc: "src/asset/Photos/Rahul.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346345/assets/asset/Photos/pimyk5fvjxxj4uumox2h.jpg"
   },
   {
     name: "Shreedhar",
     affiliation: "Electronics and Communication Engineering",
     text: "The most useful AI tool that I currently pay for is, hands down, IEEE's resource access. It's fast, handles complex topics, and delivers quality information.",
-    imgSrc: "src/asset/Photos/Shreedhar.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346345/assets/asset/Photos/iskal42mtxippckritbd.jpg"
   },
   {
     name: "Varsha",
     affiliation: "Electronics and Communication Engineering",
     text: "IEEE is the best technical resource tool I've found. Join it, avoid missing out at your own peril. The networking alone is worth the membership fee.",
-    imgSrc: "src/asset/Photos/Varsha.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346344/assets/asset/Photos/iuve3p0fqd8nasw7afsg.jpg"
   },
   {
     name: "Pawan",
     affiliation: "Electronics and Communication Engineering",
     text: "Being part of IEEE is enough to make you believe eventually you'll be able to innovate at the speed of thought. The workshops accelerate your learning curve tremendously.",
-    imgSrc: "src/asset/Photos/Pawan.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346348/assets/asset/Photos/nt3gxrlrtrdiapahnm4n.jpg"
   },
 ];
 

@@ -115,7 +115,7 @@ function Navbar() {
           {/* Logo */}
           <NavLink to="/home" onClick={() => handleLinkClick("/home")}>
             <img
-              // src={jceLogo}
+              src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346353/assets/asset/Logos/ouguh6tjkg2bsgfbcabr.png"
               alt="JCE Logo"
               className="h-16 md:h-20 object-contain hover:brightness-125 transition-all duration-300"
             />

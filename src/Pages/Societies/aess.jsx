@@ -1,9 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-// Import images
-// import techtrivaImage from "../../asset/Events/Techtriva.jpg";
-// import AessPoster from "../../asset/Events/AESS-poster.jpg";
-// import Advisorimage from "../../asset/Photos/Dr_Krupa.jpg";
+
 
 const AESS = () => {
   const fadeIn = {
@@ -15,9 +12,9 @@ const AESS = () => {
   // Gallery images array
   const galleryImages = [
     { 
-      // src: techtrivaImage, 
+      src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346295/assets/asset/Events/gbhjj6jsdyypllfdosci.jpg", 
       alt: "TechTriva Event" },
-    { src: AessPoster, alt: "AESS Poster" },
+    { src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346295/assets/asset/Events/gbhjj6jsdyypllfdosci.jpg", alt: "AESS Poster" },
     // Add more gallery images here when available
   ];
 
@@ -134,7 +131,7 @@ const AESS = () => {
               <div className="flex flex-col">
                 <div className="w-full">
                   <img
-                    src={Advisorimage}
+                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346346/assets/asset/Photos/anxznimgrkvbnro5pxlc.jpg"
                     alt="Faculty Advisor"
                     className="w-full h-64 object-cover"
                   />
@@ -173,8 +170,8 @@ const AESS = () => {
               {...fadeIn}
             >
               <img
-                src="/api/placeholder/150/150"
-                alt="Committee Member"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743347091/assets/asset/Execom/xqub8zouzhv7ctkjozbq.jpg"
+                alt="AESS Chair"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />
               <h4 className="text-lg font-bold text-white">
@@ -191,7 +188,7 @@ const AESS = () => {
               transition={{ delay: 0.1 }}
             >
               <img
-                src="/api/placeholder/150/150"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346900/assets/asset/Execom/hlhhdgyxnrszsf3tj7xj.jpg"
                 alt="Committee Member"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />
@@ -209,7 +206,7 @@ const AESS = () => {
               transition={{ delay: 0.2 }}
             >
               <img
-                src="/api/placeholder/150/150"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346921/assets/asset/Execom/icekiyu4smhk2pnqicyd.jpg"
                 alt="Committee Member"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />
@@ -225,7 +222,7 @@ const AESS = () => {
               transition={{ delay: 0.3 }}
             >
               <img
-                src="/api/placeholder/150/150"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/a_-90/assets/asset/Execom/mpv6rbd7q0shejyjvxdh"
                 alt="Committee Member"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />
@@ -241,7 +238,7 @@ const AESS = () => {
               transition={{ delay: 0.4 }}
             >
               <img
-                src="/api/placeholder/150/150"
+                // src="/api/placeholder/150/150"
                 alt="Committee Member"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />
@@ -287,7 +284,7 @@ const AESS = () => {
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/3">
                   <img
-                    src={AessPoster}
+                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346295/assets/asset/Events/gbhjj6jsdyypllfdosci.jpg"
                     alt="Poster Presentation"
                     className="w-full h-full object-cover"
                   />
@@ -341,7 +338,7 @@ const AESS = () => {
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/3">
                   <img
-                    src={techtrivaImage}
+                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346295/assets/asset/Events/rcqppw2jck2hrvvqs3tf.jpg"
                     alt="Technical Quiz"
                     className="w-full h-full object-cover"
                   />

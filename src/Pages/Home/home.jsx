@@ -11,11 +11,7 @@ import {
   FaGraduationCap,
   FaArrowRight,
 } from "react-icons/fa";
-// import group from "../../asset/Logos/JCE.png";
-// import grp from "../../asset/group.jpg";
-// import wie_logo from "../../asset/Logos/wie-logo.png";
-// import aess_logo from "../../asset/Logos/aess-logo.png";
-// import cs_logo from "../../asset/Logos/cs-logo.jpeg";
+
 import Team from "../team/team";
 import TestimonialsSection from "../Home/testimonials";
 
@@ -87,21 +83,21 @@ const events = [
 // Societies data
 const societies = [
   {
-    // logo: aess_logo,
+    logo: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346350/assets/asset/Logos/pbzkczgbvuwavjtkxs9g.png",
     name: "Aerospace & Electronic Systems Society",
     shortName: "AESS",
     description:
       "Advancing technology in aerospace, navigation, avionics, radar, and electronic systems.",
   },
   {
-    // logo: wie_logo,
+    logo: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346357/assets/asset/Logos/fy8kd8v6egrpy8ebpwhm.png",
     name: "Women in Engineering",
     shortName: "WIE",
     description:
       "Promoting women engineers and scientists in STEM fields worldwide.",
   },
   {
-    // logo: cs_logo,
+    logo: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346351/assets/asset/Logos/bi7lm0q9tlmuuotyjnu2.jpg",
     name: "Computer Society",
     shortName: "CS",
     description:
@@ -113,28 +109,28 @@ const societies = [
 const galleryImages = [
   {
     id: 1,
-    src: "src/asset/Events/CTC/Campus-to-Carporate-14.jpg",
+    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346326/assets/asset/Events/CTC/w9kzgsneojsykrhcl9we.jpg",
     alt: "Campus to Corporate",
   },
   {
     id: 2,
-    src: "src/asset/Events/CTC/Campus-to-Corporate-1.jpg",
+    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346324/assets/asset/Events/CTC/zbe7rni9u2lvwqbswiwn.jpg",
     alt: "Campus to Corporate",
   },
   {
     id: 3,
-    src: "src/asset/Events/weekend_events/Poster_1.jpg",
-    alt: "Campus to Corporate",
+    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346300/assets/asset/Events/weekend_events/bdbyg9ylsyxkowg1dzl3.jpg",
+    alt: "Poster Presentation",
   },
   {
     id: 4,
-    src: "src/asset/Events/weekend_events/Poster_23.jpg",
+    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346301/assets/asset/Events/weekend_events/o9wbqq53nyrqkj3qjvmd.jpg",
     alt: "Poster making",
   },
-  { id: 5, src: "src/asset/Events/IEEE_DAY/IEEE_DAY_1.jpg", alt: "IEEE DAY" },
-  { id: 6, src: "src/asset/Events/IEEE_DAY/IEEE_DAY_14.jpg", alt: "IEEE DAY" },
-  { id: 7, src: "src/asset/Events/AESS-poster.jpg", alt: "AESS Poster" },
-  { id: 8, src: "src/asset/Events/cyberquest.jpg", alt: "Cyber Quest" },
+  { id: 5, src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346335/assets/asset/Events/IEEE_DAY/jomwgivuhc09wo6zoesb.jpg", alt: "IEEE DAY" },
+  { id: 6, src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346333/assets/asset/Events/IEEE_DAY/nsu6kdkyjmgeoml9udku.jpg", alt: "IEEE DAY" },
+  { id: 7, src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346295/assets/asset/Events/gbhjj6jsdyypllfdosci.jpg", alt: "AESS Poster" },
+  { id: 8, src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346295/assets/asset/Events/qwh5g67qikn6hc5tf0ro.jpg", alt: "Cyber Quest" },
 ];
 
 // SectionTitle component for consistent headings
@@ -169,14 +165,14 @@ const SectionTitle = ({ title, subtitle, light = false }) => {
   );
 };
 
-// Enhanced Hero Section Component
+
 const HeroSection = () => {
   return (
     <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Zoom Effect */}
       <div className="absolute inset-0">
         <motion.img
-          // src={grp}
+          src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346295/assets/asset/qyw4ievpt2a96bcg1son.jpg"
           alt="IEEE Event"
           className="w-full h-full object-cover"
           style={{ filter: "brightness(0.3)" }}
@@ -199,7 +195,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl">
         <div className="mb-8">
           <img
-            // src={group}
+            src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346352/assets/asset/Logos/nxtdwoh7fju43ay3vgiy.png"
             alt="JCE Logo"
             className="w-28 h-28 mx-auto mb-6 rounded-full border-2 border-white/20 shadow-lg"
           />
@@ -272,7 +268,7 @@ const AboutSection = () => {
           <MotionWrapper delay={0.2}>
             <div className="rounded-xl overflow-hidden shadow-xl">
               <img
-                // src={grp}
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346901/assets/asset/Execom/f7euamlikrouadscyrdp.jpg"
                 alt="IEEE Student Branch"
                 className="w-full h-auto"
               />
