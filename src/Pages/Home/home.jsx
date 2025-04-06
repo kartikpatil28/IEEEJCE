@@ -31,7 +31,7 @@ const MotionWrapper = ({ children, delay = 0, className = "" }) => (
 // Stats data with icons
 const stats = [
   {
-    value: 500,
+    value: 100,
     label: "Members",
     color: "text-blue-500",
     icon: <FaUsers className="mb-2 mx-auto text-blue-500" size={28} />,
@@ -49,7 +49,7 @@ const stats = [
     icon: <FaUsers className="mb-2 mx-auto text-blue-500" size={28} />,
   },
   {
-    value: 10,
+    value: 3,
     label: "Mentors",
     color: "text-blue-500",
     icon: <FaGraduationCap className="mb-2 mx-auto text-blue-500" size={28} />,
@@ -59,24 +59,24 @@ const stats = [
 // Upcoming events
 const events = [
   {
-    name: "IEEE Tech Talk",
-    date: "Oct 25, 2024",
-    description: "Latest advancements in AI and machine learning",
+    name: "INCET",
+    date: "MAY 21, 2025",
+    description: "Research paper submission and presentation",
   },
   {
-    name: "Hackathon 2025",
-    date: "Jan 15, 2025",
+    name: "Mini Hackathon 2025",
+    date: "TBD",
     description: "48-hour coding competition with exciting prizes",
   },
   {
-    name: "Workshops on IoT",
-    date: "Nov 10, 2024",
-    description: "Hands-on experience with IoT devices and platforms",
+    name: "Tech interview Session by Prof. Radhika",
+    date: "TBD",
+    description: "Learning professsional ethics and interview hacks",
   },
   {
-    name: "AI Seminar",
-    date: "Dec 5, 2024",
-    description: "Industry experts sharing insights on artificial intelligence",
+    name: "ISRO industrial visits",
+    date: "May 15, 2025",
+    description: "An educational visit to ISRO facilities to explore advancements in space technology and research",
   },
 ];
 
@@ -518,6 +518,7 @@ const EventsSection = () => {
           ))}
         </div>
       </div>
+      <div className="items-center justify-center flex m-12 text-4xl font-bold font-serif"><p className="text-white">And many more......</p></div>
     </section>
   );
 };
@@ -744,6 +745,7 @@ const MobileEventsPanel = ({ showEventsPanel, setShowEventsPanel }) => {
                       </p>
                     </div>
                   </div>
+                  <div className="text-white"><p>And many more.....</p></div>
                 </motion.div>
               ))}
               <Link

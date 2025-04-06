@@ -125,7 +125,7 @@ function Team() {
     
   ];
 
-  const filters = ["All", "IEEE", "WIE", "AESS"];
+  const filters = ["All", "IEEE", "WIE", "AESS","CS"];
 
   const filteredMembers =
     activeFilter === "All"
@@ -394,12 +394,12 @@ function Team() {
           </h2>
 
           {/* Filter buttons */}
-          <div className="flex flex-wrap justify-center gap-2 mb-12">
+          <div className="flex flex-wrap justify-center gap-2 mb-12 rounded-full">
             {filters.map((filter) => (
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                className={`px-4 py-2 rounded-4xl text-sm font-medium transition-all ${
                   activeFilter === filter
                     ? "bg-blue-500 text-white"
                     : "bg-gray-800 text-gray-300 hover:bg-gray-700"
@@ -427,6 +427,7 @@ function Team() {
                 <div className="h-64 overflow-hidden relative">
                   <img
                     src={member.image}
+                    loading="lazy"
                     alt={member.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -449,7 +450,7 @@ function Team() {
                     <p className="text-blue-400 mb-3">{member.title}</p>
                     <div className="w-16 h-1 bg-blue-500 mx-auto mb-4"></div>
                     <div className="flex justify-center space-x-3 pt-2">
-                      <button className="p-2 text-gray-400 hover:text-white transition-colors">
+                      {/* <button className="p-2 text-gray-400 hover:text-white transition-colors">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-5 w-5"
@@ -478,7 +479,7 @@ function Team() {
                         >
                           <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                         </svg>
-                      </button>
+                      </button> */}
                     </div>
                   </div>
                 </div>
@@ -507,6 +508,10 @@ function Team() {
             <div className="text-center">
               <div className="text-5xl font-bold text-white mb-2">6</div>
               <div className="text-blue-300">AESS Membars</div>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-bold text-white mb-2">1</div>
+              <div className="text-blue-300">CS Membars</div>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-white mb-2">20+</div>

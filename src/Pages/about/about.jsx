@@ -96,7 +96,7 @@ const AboutPage = () => {
             <div className="mt-8 flex flex-wrap gap-4">
               <div className="flex items-center gap-2 bg-gray-700 bg-opacity-50 rounded-full px-4 py-2">
                 <div className="h-3 w-3 bg-blue-500 rounded-full"></div>
-                <span>500+ Members</span>
+                <span>100+ Members</span>
               </div>
               <div className="flex items-center gap-2 bg-gray-700 bg-opacity-50 rounded-full px-4 py-2">
                 <div className="h-3 w-3 bg-purple-500 rounded-full"></div>
@@ -146,7 +146,7 @@ const AboutPage = () => {
                 <div className="inline-block p-4 bg-blue-600 bg-opacity-30 rounded-full mb-4">
                   <FaUsers className="text-3xl text-blue-300" />
                 </div>
-                <h3 className="text-6xl font-bold mb-2 text-white">500+</h3>
+                <h3 className="text-6xl font-bold mb-2 text-white">100+</h3>
                 <p className="text-blue-200 text-xl">Active Members</p>
                 <p className="text-blue-200 text-sm mt-4 opacity-75">Building the future together</p>
               </div>
@@ -166,7 +166,7 @@ const AboutPage = () => {
                 </div>
                 <h3 className="text-6xl font-bold mb-2 text-white">50+</h3>
                 <p className="text-purple-200 text-xl">Events Conducted</p>
-                <p className="text-purple-200 text-sm mt-4 opacity-75">Workshops, hackathons, and seminars</p>
+                <p className="text-purple-200 text-sm mt-4 opacity-75">Workshops, hackathons, and paper presentation</p>
               </div>
             </motion.div>
             
@@ -199,7 +199,7 @@ const AboutPage = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-block px-4 py-1 bg-blue-600 bg-opacity-20 rounded-full text-blue-400 font-semibold text-sm mb-4"
+              className="inline-block px-4 py-1 bg-blue-600 bg-opacity-20 rounded-full text-white font-semibold text-sm mb-4"
             >
               OUR ACHIEVEMENTS
             </motion.div>
@@ -424,7 +424,7 @@ const achievements = [
   {
     icon: FaUsers,
     title: "Community Growth",
-    description: "Over 500 active members contributing to IEEE initiatives and building a vibrant tech ecosystem at JCE.",
+    description: "Over 100 active members contributing to IEEE initiatives and building a vibrant tech ecosystem at JCE.",
   },
   {
     icon: FaTrophy,
@@ -434,7 +434,7 @@ const achievements = [
   {
     icon: GiAchievement,
     title: "Innovative Projects",
-    description: "Conducted 50+ successful research projects and hackathons with real-world applications and industry impact.",
+    description: "Successfully conducted research projects and hackathons with real-world applications and industry impact.",
   },
 ];
 

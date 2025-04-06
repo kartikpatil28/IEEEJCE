@@ -71,10 +71,10 @@ function Navbar() {
                 {link.name === "More Sites" ? (
                   <NavLink
                     to={link.url}
-                    className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
+                    className="text-gray-300 hover:text-blue-400 transition-colors duration-200 no"
                     onClick={() => handleLinkClick(link.url)}
                   >
-                    {link.name}
+                    <span className="text-white no-underline">{link.name}</span>
                   </NavLink>
                 ) : (
                   <a
@@ -85,10 +85,11 @@ function Navbar() {
                   >
                     {link.name === "IEEE Xplore Digital Library" ? (
                       <>
-                        IEEE <span className="italic">Xplore</span>
+                        <span className="text-white">IEEE <span className="italic text-white">Xplore</span></span>
                       </>
                     ) : (
-                      link.name
+                      <span className="text-white">{link.name}</span>
+                      
                     )}
                   </a>
                 )}
@@ -133,7 +134,7 @@ function Navbar() {
                       `px-4 py-2 rounded-full transition-all duration-300 ${
                         isActive
                           ? "text-white bg-blue-700/20"
-                          : "text-white hover:bg-blue-700/10"
+                          : "no-underline text-white hover:bg-blue-700/10"
                       }`
                     }
                   >

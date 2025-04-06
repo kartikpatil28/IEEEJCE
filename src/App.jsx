@@ -14,7 +14,7 @@ import AESS from "../src/Pages/Societies/aess.jsx";
 import CS from "../src/Pages/Societies/cs.jsx";
 import WIE from "../src/Pages/Societies/wie.jsx";
 import Membership from "../src/Pages/Membership/membership.jsx";
-import Loading from "../src/Pages/Home/Loading.jsx"; // Import the new Loading component
+import Loading from "../src/Pages/Home/Loading.jsx"; 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {

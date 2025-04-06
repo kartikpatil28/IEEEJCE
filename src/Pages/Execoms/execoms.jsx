@@ -15,7 +15,7 @@ const Execoms = () => {
       sem: "6th",
       division: "A",
       email: "abhishekdevarushi7@gmail.com",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "Vice-Chair",
@@ -26,7 +26,7 @@ const Execoms = () => {
       sem: "6th",
       division: "A",
       email: "priyam@dtu.ac.in",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "Secretary",
@@ -37,7 +37,7 @@ const Execoms = () => {
       sem: "6th",
       division: "C",
       email: "snehalsuryavanshi@ieee.org",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "Treasurer",
@@ -48,7 +48,7 @@ const Execoms = () => {
       sem: "6th",
       division: "A",
       email: "darshantukkar1@gmail.com",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "Media Head",
@@ -59,7 +59,7 @@ const Execoms = () => {
       sem: "6th",
       division: "C",
       email: "siddarthjambagi@gmail.com",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "Membership co-ordinator",
@@ -70,7 +70,7 @@ const Execoms = () => {
       sem: "6th",
       division: "C",
       email: "vinayakagasimani1@gmail.com",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "Webmaster",
@@ -81,7 +81,7 @@ const Execoms = () => {
       sem: "6th",
       division: "A",
       email: "kartikpatilwork24@gmail.com",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "WIE Chair",
@@ -136,7 +136,7 @@ const Execoms = () => {
       sem: "6nd",
       division: "A",
       email: "samuilla@iitb.ac.in",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "AESS Chair",
@@ -202,7 +202,7 @@ const Execoms = () => {
       sem: "2nd",
       division: "A",
       email: "chetanbaloji123@gmail.com",
-      category: "main"
+      category: "IEEE"
     },
   ];
 
@@ -214,7 +214,7 @@ const Execoms = () => {
       ieeeNumber: "90780177",
       mobileNo: "9164503749",
       email: "austin@gmail.com",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "Vice-Chair",
@@ -223,7 +223,7 @@ const Execoms = () => {
       ieeeNumber: "90856235",
       mobileNo: "9812345679",
       email: "chandan@gmail.com",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "Secretary",
@@ -232,7 +232,7 @@ const Execoms = () => {
       ieeeNumber: "90782452",
       mobileNo: "9876543211",
       email: "kshiti@gmail.com",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "Treasurer",
@@ -241,7 +241,7 @@ const Execoms = () => {
       ieeeNumber: "90785124",
       mobileNo: "9123456788",
       email: "shreedhar@gmail.com",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "Media Head",
@@ -250,7 +250,7 @@ const Execoms = () => {
       ieeeNumber: "90876355",
       mobileNo: "9101234568",
       email: "rahul@gmail.com",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "Membership co-ordinator",
@@ -259,7 +259,7 @@ const Execoms = () => {
       ieeeNumber: "90784214",
       mobileNo: "9123450988",
       email: "abhishek@gmail.com",
-      category: "main"
+      category: "IEEE"
     },
     {
       position: "WIE Chair",
@@ -393,14 +393,14 @@ const Execoms = () => {
               All
             </button>
             <button
-              onClick={() => setActiveTab("main")}
+              onClick={() => setActiveTab("IEEE")}
               className={`px-4 py-2 text-sm font-medium rounded-lg transition-all ${
-                activeTab === "main"
+                activeTab === "IEEE"
                   ? "bg-blue-100 text-blue-800"
                   : "bg-white text-gray-600 hover:bg-gray-100"
               }`}
             >
-              Main Committee
+              IEEE Committee
             </button>
             <button
               onClick={() => setActiveTab("wie")}
@@ -446,7 +446,7 @@ const Execoms = () => {
           {filteredMembers.map((member, index) => (
             <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className={`h-3 ${
-                member.category === "main" ? "bg-blue-600" :
+                member.category === "IEEE" ? "bg-blue-600" :
                 member.category === "wie" ? "bg-purple-600" :
                 "bg-green-600"
               }`}></div>

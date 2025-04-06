@@ -234,7 +234,7 @@ function EventsPage() {
         <div className="container mx-auto max-w-6xl">
           {/* Tab Selection */}
           <div className="flex justify-center mb-12">
-            <div className="inline-flex rounded-full p-1 bg-gray-800">
+            <div className="inline-flex  p-1 bg-gray-800">
               {["upcoming", "past"].map((tab) => (
                 <button
                   key={tab}

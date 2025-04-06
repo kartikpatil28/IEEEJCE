@@ -16,7 +16,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-gray-900 text-gray-300 pt-10 pb-6 font-poppins">
+    <footer className="relative bg-gray-900 text-white  pt-10 pb-6 font-poppins">
       {/* Wave Divider (unchanged) */}
       <div className="absolute top-0 left-0 w-full overflow-hidden">
         <svg
@@ -60,44 +60,44 @@ const Footer = () => {
           {/* Column 2 - Useful Links */}
           <div className="text-center md:text-left">
             <h5 className="text-white font-semibold mb-4">Useful Links</h5>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-white">
               <li>
-                <a href="/about" className="text-gray-300 hover:text-blue-400 transition duration-300 no-underline hover:no-underline">
+                <a href="/about" className="text-white hover:text-blue-400 transition duration-300 no-underline hover:underline">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="/events" className="text-gray-300 hover:text-blue-400 transition duration-300 no-underline hover:no-underline">
+                <a href="/events" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
                   Events
                 </a>
               </li>
               <li>
-                <a href="/membership" className="text-gray-300 hover:text-blue-400 transition duration-300 no-underline hover:no-underline">
+                <a href="/membership" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
                   Membership
                 </a>
               </li>
               <li>
-                <a href="https://www.ieee.org/" className="text-gray-300 hover:text-blue-400 transition duration-300 no-underline hover:no-underline">
+                <a href="https://www.ieee.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
                   IEEE
                 </a>
               </li>
               <li>
-                <a href="https://www.ieeer10.org/" className="text-gray-300 hover:text-blue-400 transition duration-300 no-underline hover:no-underline">
+                <a href="https://www.ieeer10.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
                   Region 10
                 </a>
               </li>
               <li>
-                <a href="https://ieeebangalore.org/" className="text-gray-300 hover:text-blue-400 transition duration-300 no-underline hover:no-underline">
+                <a href="https://ieeebangalore.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
                   Bangalore Section
                 </a>
               </li>
               <li>
-                <a href="https://ieee-collabratec.ieee.org/" className="text-gray-300 hover:text-blue-400 transition duration-300 no-underline hover:no-underline">
+                <a href="https://ieee-collabratec.ieee.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
                   IEEE Collaborate
                 </a>
               </li>
               <li>
-                <a href="https://www.ieee.org/membership/join/global-membership.html" className="text-gray-300 hover:text-blue-400 transition duration-300 no-underline hover:no-underline">
+                <a href="https://www.ieee.org/membership/join/global-membership.html" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
                   About Global IEEE Membership
                 </a>
               </li>
@@ -109,17 +109,17 @@ const Footer = () => {
             <h5 className="text-white font-semibold mb-4">Societies</h5>
             <ul className="space-y-2">
               <li>
-                <a href="https://www.computer.org/" className="text-gray-300 hover:text-blue-400 transition duration-300 no-underline hover:no-underline">
+                <a href="https://www.computer.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
                   Computer Society
                 </a>
               </li>
               <li>
-                <a href="https://wie.ieee.org/" className="text-gray-300 hover:text-blue-400 transition duration-300 no-underline hover:no-underline">
+                <a href="https://wie.ieee.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
                   Women in Engineering
                 </a>
               </li>
               <li>
-                <a href="https://ieee-aess.org/" className="text-gray-300 hover:text-blue-400 transition duration-300 no-underline hover:no-underline">
+                <a href="https://ieee-aess.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
                   Aerospace and Electronic Systems Society
                 </a>
               </li>
@@ -130,10 +130,10 @@ const Footer = () => {
           <div className="text-center justify-center items-center md:text-left">
             <h5 className="text-white font-semibold mb-4">Contact Us</h5>
             <ul className="space-y-2">
-              <li className="text-gray-300">599/2 T.S. Nagar Hunchanhatti Road</li>
-              <li className="text-gray-300">Macche Belagavi 590014</li>
-              <li className="text-gray-300">Phone: +91 831 2411192</li>
-              <li className="text-gray-300">Email: info[at]jainbgm.in</li>
+              <li className="text-gray-100 ">599/2 T.S. Nagar Hunchanhatti Road</li>
+              <li className="text gray-100 ">Macche Belagavi 590014</li>
+              <li className="text-gray-100">Phone: +91 831 2411192</li>
+              <li className="text-gray-100 ">Email: info[at]jainbgm.in</li>
             </ul>
             {/* Social Media Links */}
             <div className="mt-4 flex justify-center space-x-4">
@@ -141,31 +141,31 @@ const Footer = () => {
                 href="https://wa.me/your-whatsapp-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-green-500 transition duration-300 no-underline hover:no-underline"
+                className="text-white  hover:text-green-500 transition duration-300 no-underline hover:underline"
               >
-                <i className="fab fa-whatsapp text-2xl"></i>
+                <i className="fab fa-whatsapp text-2xl text-green-500"></i>
               </a>
               <a
                 href="https://www.instagram.com/your-instagram-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-pink-500 transition duration-300 no-underline hover:no-underline"
+                className="text-pink-600 transition duration-300 no-underline hover:underline"
               >
-                <i className="fab fa-instagram text-2xl"></i>
+                <i className="fab fa-instagram text-2xl text-pink-500"></i>
               </a>
               <a
                 href="https://www.linkedin.com/your-linkedin-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-blue-500 transition duration-300 no-underline hover:no-underline"
+                className="  transition duration-300 no-underline hover:underline"
               >
-                <i className="fab fa-linkedin text-2xl"></i>
+                <i className="fab fa-linkedin text-2xl text-blue-500"></i>
               </a>
               <a
                 href="https://twitter.com/your-x-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-purple-900 transition duration-300 no-underline hover:no-underline"
+                className="text-black  transition duration-300 no-underline hover:underline"
               >
                 <i className="fab fa-x-twitter text-2xl"></i>
               </a>
@@ -187,9 +187,9 @@ const Footer = () => {
       {showScroll && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out no-underline"
+          className="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center bg-blue-700 text-white shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out no-underline"
         >
-          <i className="fas fa-arrow-up"></i>
+          <i className="fas fa-arrow-up rounded-2xl"></i>
         </button>
       )}
     </footer>
