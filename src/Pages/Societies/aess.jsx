@@ -12,9 +12,9 @@ const AESS = () => {
   // Gallery images array
   const galleryImages = [
     { 
-      src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346295/assets/asset/Events/gbhjj6jsdyypllfdosci.jpg", 
-      alt: "TechTriva Event" },
-    { src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346295/assets/asset/Events/gbhjj6jsdyypllfdosci.jpg", alt: "AESS Poster" },
+      src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093401/Poster_2_gdi1qx.webp", 
+      alt: "Poster" },
+    { src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093354/WIE_WD_4_k9ekpp.webp", alt: "AESS Poster" },
     // Add more gallery images here when available
   ];
 
@@ -131,7 +131,7 @@ const AESS = () => {
               <div className="flex flex-col">
                 <div className="w-full">
                   <img
-                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346346/assets/asset/Photos/anxznimgrkvbnro5pxlc.jpg"
+                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093416/Dr_Krupa_okvig3.webp"
                     alt="Faculty Advisor"
                     className="w-full h-64 object-cover"
                   />
@@ -170,7 +170,7 @@ const AESS = () => {
               {...fadeIn}
             >
               <img
-                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743347091/assets/asset/Execom/xqub8zouzhv7ctkjozbq.jpg"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093346/Muskan_hpd9df.webp"
                 alt="AESS Chair"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />
@@ -188,7 +188,7 @@ const AESS = () => {
               transition={{ delay: 0.1 }}
             >
               <img
-                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346900/assets/asset/Execom/hlhhdgyxnrszsf3tj7xj.jpg"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093343/Radhika_mbv70h.webp"
                 alt="Committee Member"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />
@@ -206,7 +206,7 @@ const AESS = () => {
               transition={{ delay: 0.2 }}
             >
               <img
-                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346921/assets/asset/Execom/icekiyu4smhk2pnqicyd.jpg"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093340/Saniya_c7znqs.webp"
                 alt="Committee Member"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />
@@ -222,7 +222,7 @@ const AESS = () => {
               transition={{ delay: 0.3 }}
             >
               <img
-                src="https://res.cloudinary.com/dkztwdo8h/image/upload/a_-90/assets/asset/Execom/mpv6rbd7q0shejyjvxdh"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093334/Preeti_rahjxa.webp"
                 alt="Committee Member"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />
@@ -238,7 +238,7 @@ const AESS = () => {
               transition={{ delay: 0.4 }}
             >
               <img
-                // src="/api/placeholder/150/150"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093333/Meghana_qreuwo.webp"
                 alt="Committee Member"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />
@@ -254,7 +254,7 @@ const AESS = () => {
               transition={{ delay: 0.5 }}
             >
               <img
-                src="/api/placeholder/150/150"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093335/Chetan_q3z82t.webp"
                 alt="Committee Member"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />

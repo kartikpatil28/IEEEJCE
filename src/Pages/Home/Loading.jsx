@@ -23,7 +23,7 @@ const Loading = () => {
       {/* Simple logo */}
       <div className="mb-12">
         <img
-          src="src/asset/Logos/JCE.png"
+          src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093404/JCE_zjaf1p.png"
           alt="Logo"
           className="w-24 h-24 object-contain"
         />

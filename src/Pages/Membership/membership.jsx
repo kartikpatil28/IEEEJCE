@@ -24,25 +24,25 @@ const Membership = () => {
   const galleryData = [
     {
       id: 1,
-      image: "/api/placeholder/400/300",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093384/Conference-16_n4g49w.webp",
       title: "IEEE Hackathon 2023",
       description: "A 24-hour hackathon where students collaborated to build innovative solutions for real-world problems.",
     },
     {
       id: 2,
-      image: "/api/placeholder/400/300",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093397/Campus-to-Corporate-4_gkpy8i.webp",
       title: "Tech Talk: AI & Machine Learning",
       description: "An insightful session on the latest trends in AI and machine learning, featuring industry experts.",
     },
     {
       id: 3,
-      image: "/api/placeholder/400/300",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093422/IEEE_Xtreme_guk7ji.webp",
       title: "Workshop: IoT for Beginners",
       description: "Hands-on workshop introducing students to the basics of IoT and its applications.",
     },
     {
       id: 4,
-      image: "/api/placeholder/400/300",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093423/Aero_talk_ndajse.webp",
       title: "IEEE Women in Engineering",
       description: "A networking event celebrating the achievements of women in engineering and technology.",
     },

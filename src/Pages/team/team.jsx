@@ -7,37 +7,37 @@ function Team() {
 
   const teamMembers = [
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346971/assets/asset/Execom/clrkcsuvnxc5y8jzfctu.jpg",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093348/Abhishek_cu3ohf.webp",
       name: "Abhishek Devarushi",
       title: "IEEE Chair",
       category: "IEEE",
     },
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743347013/assets/asset/Execom/jcxwffooc0w3uwjcnncf.jpg",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093342/Beerappa_i3gpdb.webp",
       name: "Beerappa Marannur",
       title: "IEEE Vice Chair",
       category: "IEEE",
     },
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743347083/assets/asset/Execom/vvqjxmdtrlnqaj1pxojn.jpg",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093334/snehal_smjbyx.webp",
       name: "Snehal Suryavanshi",
       title: "Secretary",
       category: "IEEE",
     },
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346994/assets/asset/Execom/gk2izl22vxejq7c2c9vh.jpg",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093341/Darshan_iv9cnx.webp",
       name: "Darshan Tukkar",
       title: "Treasurer",
       category: "IEEE",
     },
     {
-      // image: rahul,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093333/Siddharth_xmcykj.webp",
       name: "Siddarth Jambhagi",
       title: "Media Head",
       category: "IEEE",
     },
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346883/assets/asset/Execom/hulfzpinwy1penqc1m44.jpg",
+      image: "",
       name: "Vinayak A",
       title: "Membership Coordinator",
       category: "IEEE",
@@ -45,14 +45,14 @@ function Team() {
 
     
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346960/assets/asset/Execom/tlrdnzqvpishwvr2gxl8.jpg",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093347/Kartik_rboa4d.webp",
       name: "Kartik Patil",
       title: "Webmaster",
       category: "IEEE",
     },
 
     { 
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743347092/assets/asset/Execom/ij9atiiczmyzjcjwohsi.jpg",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093345/Shrusti_nhcdtm.webp",
        name: "Srushti Utturkar", 
        title: "WIE Chair",
         category: "WIE" },
@@ -63,7 +63,7 @@ function Team() {
       category: "WIE",
     },
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346993/assets/asset/Execom/xt8oy4v2gqqsgx2iskze.jpg",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093348/Sharada_hl8zk6.webp",
       name: "Sharada Ugare",
       title: "WIE Secretary",
       category: "WIE",
@@ -75,49 +75,49 @@ function Team() {
       category: "WIE",
     },
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/t_samuel/assets/asset/Execom/je7dcwt4cpiibux1k982",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093339/Samuell_lyhqei.webp",
       name: "Samiulla Kustagi",
       title: "WIE Media Head",
       category: "WIE",
     },
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743347091/assets/asset/Execom/xqub8zouzhv7ctkjozbq.jpg",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093346/Muskan_hpd9df.webp",
       name: "Muskan Dhalayat",
       title: "AESS Chair",
       category: "AESS",
     },
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346900/assets/asset/Execom/hlhhdgyxnrszsf3tj7xj.jpg",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093343/Radhika_mbv70h.webp",
       name: "Radhika Lohar",
       title: "AESS Vice-Chair",
       category: "AESS",
     },
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346921/assets/asset/Execom/icekiyu4smhk2pnqicyd.jpg",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093340/Saniya_c7znqs.webp",
       name: "Saniya Gijoni",
       title: "AESS Secretary",
       category: "AESS",
     },
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/a_-90/assets/asset/Execom/mpv6rbd7q0shejyjvxdh",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093334/Preeti_rahjxa.webp",
       name: "Preeti Patil",
       title: "AESS Treasurer",
       category: "AESS",
     },
     {
-      // image: siddarth,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093333/Meghana_qreuwo.webp",
       name: "Meghana Kubasad",
       title: "AESS Webmaster",
       category: "AESS",
     },
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/a_-90/assets/asset/Execom/wjmju6hsh2mp1s4bf2aa",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093335/Chetan_q3z82t.webp",
       name: "Chetan Baloji",
       title: "AESS Media Head",
       category: "AESS",
     },
     {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743347074/assets/asset/Execom/bozlwppea9lgulbtvjg7.jpg",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093340/Shruti_pouqux.webp",
       name: "Shrutika",
       title: "CS Chair",
       category: "CS",

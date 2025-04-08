@@ -43,31 +43,31 @@ const testimonials = [
     name: "Austin Pacheco",
     affiliation: "Electronics and Communication Engineering",
     text: "I really like how IEEE workshops connect theory to practical applications. The Arduino session helped me understand embedded systems in a way lectures never could.",
-    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346352/assets/asset/Photos/xfdro56p1dpuwxexg1db.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093417/Austin_bvluog.webp"
   },
   {
     name: "Chandan K",
     affiliation: "Electronics and Communication Engineering",
     text: "Being part of WIE has been transformative. I've found mentors who have guided my research interests and supported my growth in a male-dominated field.",
-    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346352/assets/asset/Photos/c444pplj8hiffezsvapv.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093416/Chandan_jfg2ie.webp"
   },
   {
     name: "Chaitra K",
     affiliation: "Electronics and Communication Engineering",
     text: "The most useful IEEE resource for me has been the technical library access. It's hands down the best benefit for research students like me.",
-    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346346/assets/asset/Photos/femtwssltssocvk5iisw.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093418/Chaitra_o5ulkp.webp"
   },
   {
     name: "Abhishek",
     affiliation: "Electronics and Communication Engineering",
     text: "IEEE's professional network helped me land my first internship. The industry connections through the chapter are invaluable for career growth.",
-    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346344/assets/asset/Photos/iqkri7jl3o4jdyq2cqyl.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093420/Abhishek_t8kgjx.webp"
   },
   {
     name: "Kshiti",
     affiliation: "Electronics and Communication Engineering",
     text: "The IEEE workshops on machine learning were exactly what I needed to bridge the gap between theory and implementation. Now I'm leading our college's AI team.",
-    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346351/assets/asset/Photos/aswtjgnsg5j3zen1fw37.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093411/Kshiti_lssm4j.webp"
   },
 ];
 
@@ -77,31 +77,31 @@ const moreTestimonials = [
     name: "Narayan Sabale",
     affiliation: "Electronics and Communication Engineering",
     text: "The Cursor tab completion in IEEE coding workshops is occasionally so helpful it defies reality - about ~25% of the time it's anticipating exactly what I want to do.",
-    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346344/assets/asset/Photos/xebkmak0k6ihtpsnzuwb.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093410/Narayan_d881jv.webp"
   },
   {
     name: "Rahul Halkarni",
     affiliation: "Electronics and Communication Engineering",
     text: "It's amazing having IEEE as a programming partner, and is an incredible accelerator for me and my team's projects in robotics competitions.",
-    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346345/assets/asset/Photos/pimyk5fvjxxj4uumox2h.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093415/Rahul_gmjkwd.webp"
   },
   {
     name: "Shreedhar",
     affiliation: "Electronics and Communication Engineering",
     text: "The most useful AI tool that I currently pay for is, hands down, IEEE's resource access. It's fast, handles complex topics, and delivers quality information.",
-    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346345/assets/asset/Photos/iskal42mtxippckritbd.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093417/Shreedhar_rj3apb.webp"
   },
   {
     name: "Varsha",
     affiliation: "Electronics and Communication Engineering",
     text: "IEEE is the best technical resource tool I've found. Join it, avoid missing out at your own peril. The networking alone is worth the membership fee.",
-    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346344/assets/asset/Photos/iuve3p0fqd8nasw7afsg.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093413/Varsha_bgjlc7.webp"
   },
   {
     name: "Pawan",
     affiliation: "Electronics and Communication Engineering",
     text: "Being part of IEEE is enough to make you believe eventually you'll be able to innovate at the speed of thought. The workshops accelerate your learning curve tremendously.",
-    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346348/assets/asset/Photos/nt3gxrlrtrdiapahnm4n.jpg"
+    imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093412/pawan_qyubat.webp"
   },
 ];
 

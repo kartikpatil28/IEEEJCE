@@ -73,7 +73,7 @@ const ComputerSociety = () => {
               <div className="flex flex-col sm:flex-row">
                 <div className="sm:w-1/3">
                   <img
-                    src="/api/placeholder/300/300"
+                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093416/Dr_Krupa_okvig3.webp"
                     alt="Faculty Advisor"
                     className="w-full h-full object-cover"
                   />
@@ -101,7 +101,7 @@ const ComputerSociety = () => {
               <div className="flex flex-col sm:flex-row">
                 <div className="sm:w-1/3">
                   <img
-                    src="/api/placeholder/300/300"
+                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093340/Shruti_pouqux.webp"
                     alt="CS Chair"
                     className="w-full h-full object-cover"
                   />

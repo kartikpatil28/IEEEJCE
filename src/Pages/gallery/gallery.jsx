@@ -7,139 +7,85 @@ import "slick-carousel/slick/slick-theme.css";
 const allImages = [
   // WIE Women's Day Events
   {
-    source: new URL("../../asset/Events/WIE_WD/WIE_WD_1.jpg", import.meta.url).href,
+    source: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093350/WIE_WD_1_lzivwg.webp",
     title: "Women's Day Celebration",
     description: "Celebrating International Women's Day with inspiring talks",
     category: "WIE Events",
   },
   {
-    source: new URL("../../assets/Events/CTC/Campus-to-Corporate-5.jpg", import.meta.url).href,
+    source: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093428/Github_1_uuzamq.webp",
     title: "Skill Development",
     description: "Enhancing technical and soft skills",
     category: "Career Development",
   },
   {
-    source: new URL("../../assets/Events/WIE_WD/WIE_WD_2.jpg", import.meta.url).href,
+    source: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093355/WIE_WD_2_matzy7.webp",
     title: "Poster Making Competition",
     description: "Craft & Create",
     category: "WIE Events",
   },
   {
-    source: new URL("../../assets/Events/Conference/Conference-5.jpg", import.meta.url).href,
+    source:"https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093383/Conference-15_r8jnc8.webp",
     title: "Research Presentation",
     description: "Sharing innovative research findings",
     category: "Technical Events",
   },
   {
-    source: new URL("../../assets/Events/WIE_WD/WIE_WD_3.jpg", import.meta.url).href,
+    source: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093353/WIE_WD_5_ciqgps.webp",
     title: "Poster Making Competition",
     description: "Creativity & Innovation",
     category: "WIE Events",
   },
   {
-    source: new URL("../../assets/Events/WIE_WD/WIE_WD_4.jpg", import.meta.url).href,
+    source:"https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093384/Campus-to-Corporate-1_qoaudo.webp",
     title: "Networking Session",
     description: "Building connections and fostering collaboration",
-    category: "WIE Events",
+    category: "Campus to Coorporate",
   },
   {
-    source: new URL("../../assets/Events/WIE_WD/WIE_WD_5.jpg", import.meta.url).href,
+    source: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093380/Conference-8_q9oorb.webp",
     title: "Innovation Showcase",
     description: "Demonstrating projects and innovations by women engineers",
-    category: "WIE Events",
+    category: "Sensor Conference",
   },
 
   // Campus to Corporate Events
-  {
-    source: new URL("../../assets/Events/CTC/Campus-to-Corporate-14.jpg", import.meta.url).href,
-    title: "Interview Preparation",
-    description: "Expert tips on acing technical interviews",
-    category: "Career Development",
-  },
-  {
-    source: new URL("../../assets/Events/CTC/Campus-to-Corporate-18.jpg", import.meta.url).href,
-    title: "Industry Connect",
-    description: "Interaction with corporate professionals",
-    category: "Career Development",
-  },
+  
  
   {
-    source: new URL("../../assets/Events/CTC/Campus-to-Corporate-10.jpg", import.meta.url).href,
-    title: "Mock Interviews",
-    description: "Practice sessions with industry experts",
+    source:"https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093420/Career_Dr_Sushant_ci8ccx.webp",
+    title: "Career Guidance",
+    description: "Navigating career paths and opportunities",
     category: "Career Development",
   },
-  {
-    source: new URL("../../assets/Events/CTC/Campus-to-Corporate-12.jpg", import.meta.url).href,
-    title: "Resume Building",
-    description: "Creating impactful professional profiles",
-    category: "Career Development",
-  },
-  {
-    source: new URL("../../assets/Aero_Talk/Career_Dr_Sushant.jpg", import.meta.url).href,
-    title: "Resume Building",
-    description: "Creating impactful professional profiles",
-    category: "Career Development",
-  },
+  
 
   // IEEE Day Celebrations
   {
-    source: new URL("../../assets/Events/IEEE_DAY/IEEE_DAY_1.jpg", import.meta.url).href,
+    source: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093369/IEEE_DAY_46_pv7u0q.webp",
     title: "IEEE Day Opening",
     description: "Kickoff ceremony of IEEE Day celebrations",
     category: "IEEE Events",
   },
   {
-    source: new URL("../../assets/Events/IEEE_DAY/IEEE_DAY_12.jpg", import.meta.url).href,
-    title: "Technical Symposium",
-    description: "Showcasing latest technological advancements",
+    source: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093370/IEEE_DAY_23_enalqr.webp",
+    title: "Execoms 2024",
+    description: "Celebrating IEEE day",
     category: "IEEE Events",
   },
 
   // Conference and Technical Events
   {
-    source: new URL("../../assets/Events/Conference/Conference-1.jpg", import.meta.url).href,
+    source: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093380/Conference-8_q9oorb.webp",
     title: "Memory & Storage Summit",
     description: "Latest trends in storage technologies",
     category: "Technical Events",
   },
-  {
-    source: new URL("../../assets/Events/Conference/Conference-3.jpg", import.meta.url).href,
-    title: "Expert Talk",
-    description: "Industry insights and future technologies",
-    category: "Technical Events",
-  },
- 
-  {
-    source: new URL("../../assets/Events/Conference/Conference-6.jpg", import.meta.url).href,
-    title: "Networking Event",
-    description: "Building professional connections",
-    category: "Technical Events",
-  },
-
-  // Weekend Activities
-  {
-    source: new URL("../../assets/Events/Weekend_events/Poster_1.jpg", import.meta.url).href,
-    title: "Weekend Workshop",
-    description: "Practical learning through hands-on sessions",
-    category: "Workshops",
-  },
-  {
-    source: new URL("../../assets/Events/Weekend_events/Poster_2.jpg", import.meta.url).href,
-    title: "Coding Marathon",
-    description: "24-hour coding challenge for innovators",
-    category: "Workshops",
-  },
-  {
-    source: new URL("../../assets/Events/Weekend_events/Poster_3.jpg", import.meta.url).href,
-    title: "Robotics Workshop",
-    description: "Learning robotics fundamentals and applications",
-    category: "Workshops",
-  },
+  
 
   // Special Events
   {
-    source: new URL("../../assets/Events/cyberquest.jpg", import.meta.url).href,
+    source: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093428/Github_1_uuzamq.webp",
     title: "CyberQuest",
     description: "Exploring cybersecurity challenges and solutions",
     category: "Special Events",

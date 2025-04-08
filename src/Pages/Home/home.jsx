@@ -83,21 +83,21 @@ const events = [
 // Societies data
 const societies = [
   {
-    logo: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346350/assets/asset/Logos/pbzkczgbvuwavjtkxs9g.png",
+    logo: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093405/aess-logo_mhnbjb.png",
     name: "Aerospace & Electronic Systems Society",
     shortName: "AESS",
     description:
       "Advancing technology in aerospace, navigation, avionics, radar, and electronic systems.",
   },
   {
-    logo: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346357/assets/asset/Logos/fy8kd8v6egrpy8ebpwhm.png",
+    logo: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093408/wie-logo_e7tg7e.png",
     name: "Women in Engineering",
     shortName: "WIE",
     description:
       "Promoting women engineers and scientists in STEM fields worldwide.",
   },
   {
-    logo: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346351/assets/asset/Logos/bi7lm0q9tlmuuotyjnu2.jpg",
+    logo: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093406/cs-logo_knyz6z.jpg",
     name: "Computer Society",
     shortName: "CS",
     description:
@@ -109,28 +109,28 @@ const societies = [
 const galleryImages = [
   {
     id: 1,
-    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346326/assets/asset/Events/CTC/w9kzgsneojsykrhcl9we.jpg",
+    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093394/Campus-to-Corporate-15_gjyf9c.webp",
     alt: "Campus to Corporate",
   },
   {
     id: 2,
-    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346324/assets/asset/Events/CTC/zbe7rni9u2lvwqbswiwn.jpg",
+    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093392/Campus-to-Corporate-12_cvnhk7.webp",
     alt: "Campus to Corporate",
   },
   {
     id: 3,
-    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346300/assets/asset/Events/weekend_events/bdbyg9ylsyxkowg1dzl3.jpg",
+    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093401/Poster_3_vnuo7z.webp",
     alt: "Poster Presentation",
   },
   {
     id: 4,
-    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346301/assets/asset/Events/weekend_events/o9wbqq53nyrqkj3qjvmd.jpg",
+    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093400/Poster_23_yi1p3i.webp",
     alt: "Poster making",
   },
-  { id: 5, src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346335/assets/asset/Events/IEEE_DAY/jomwgivuhc09wo6zoesb.jpg", alt: "IEEE DAY" },
-  { id: 6, src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346333/assets/asset/Events/IEEE_DAY/nsu6kdkyjmgeoml9udku.jpg", alt: "IEEE DAY" },
-  { id: 7, src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346295/assets/asset/Events/gbhjj6jsdyypllfdosci.jpg", alt: "AESS Poster" },
-  { id: 8, src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346295/assets/asset/Events/qwh5g67qikn6hc5tf0ro.jpg", alt: "Cyber Quest" },
+  { id: 5, src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093372/IEEE_DAY_12_t8u4tp.webp", alt: "IEEE DAY" },
+  { id: 6, src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093369/IEEE_DAY_43_cbpslv.webp", alt: "IEEE DAY" },
+  { id: 7, src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093400/Poster_1_tpapfa.webp", alt: "AESS Poster" },
+  { id: 8, src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093428/Github_1_uuzamq.webp", alt: "Cyber Quest" },
 ];
 
 // SectionTitle component for consistent headings
@@ -172,8 +172,8 @@ const HeroSection = () => {
       {/* Background Image with Zoom Effect */}
       <div className="absolute inset-0">
         <motion.img
-          src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346295/assets/asset/qyw4ievpt2a96bcg1son.jpg"
-          alt="IEEE Event"
+          src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093333/group_yit28h.webp"
+          alt="Group Photo"
           className="w-full h-full object-cover"
           style={{ filter: "brightness(0.3)" }}
           loading="lazy"
@@ -195,8 +195,8 @@ const HeroSection = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl">
         <div className="mb-8">
           <img
-            src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346352/assets/asset/Logos/nxtdwoh7fju43ay3vgiy.png"
-            alt="JCE Logo"
+            src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093404/JCE_zjaf1p.png"
+            alt="JCE IEEE Logo"
             className="w-28 h-28 mx-auto mb-6 rounded-full border-2 border-white/20 shadow-lg"
           />
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
@@ -268,7 +268,7 @@ const AboutSection = () => {
           <MotionWrapper delay={0.2}>
             <div className="rounded-xl overflow-hidden shadow-xl">
               <img
-                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346901/assets/asset/Execom/f7euamlikrouadscyrdp.jpg"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093349/Execom-1_nx7odq.webp"
                 alt="IEEE Student Branch"
                 className="w-full h-auto"
               />
