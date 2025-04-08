@@ -25,26 +25,26 @@ const Membership = () => {
     {
       id: 1,
       image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093384/Conference-16_n4g49w.webp",
-      title: "IEEE Hackathon 2023",
-      description: "A 24-hour hackathon where students collaborated to build innovative solutions for real-world problems.",
+      title: "IEEE Storage and Memory Summit",
+      description: "A premier event exploring the latest advancements in storage and memory technologies, featuring keynote speakers and panel discussions.",
     },
     {
       id: 2,
       image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093397/Campus-to-Corporate-4_gkpy8i.webp",
-      title: "Tech Talk: AI & Machine Learning",
-      description: "An insightful session on the latest trends in AI and machine learning, featuring industry experts.",
+      title: "Campus to Coorporate",
+      description: "A session designed to bridge the gap between academic knowledge and industry skills, featuring guest speakers from leading companies.",
     },
     {
       id: 3,
       image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093422/IEEE_Xtreme_guk7ji.webp",
-      title: "Workshop: IoT for Beginners",
-      description: "Hands-on workshop introducing students to the basics of IoT and its applications.",
+      title: "IEEE Xtreme",
+      description: "A global 24-hour programming competition where teams of IEEE student members solve real-world problems.",
     },
     {
       id: 4,
       image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093423/Aero_talk_ndajse.webp",
-      title: "IEEE Women in Engineering",
-      description: "A networking event celebrating the achievements of women in engineering and technology.",
+      title: "Aero Talk",
+      description: "An interactive session by Mr. Amit Pathak focusing on aerospace engineering, featuring industry experts discussing the latest trends and technologies.",
     },
   ];
 
