@@ -26,7 +26,7 @@ const Membership = () => {
       id: 1,
       image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093384/Conference-16_n4g49w.webp",
       title: "IEEE Storage and Memory Summit",
-      description: "A premier event exploring the latest advancements in storage and memory technologies, featuring keynote speakers and panel discussions.",
+      description: "",
     },
     {
       id: 2,
