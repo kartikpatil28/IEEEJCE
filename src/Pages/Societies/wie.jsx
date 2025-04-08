@@ -1,12 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-// Import images
-// import wieWD1 from "../../asset/Events/WIE_WD/WIE_WD_1.jpg";
-// import wieWD2 from "../../asset/Events/WIE_WD/WIE_WD_2.jpg";
-// import wieWD3 from "../../asset/Events/WIE_WD/WIE_WD_3.jpg";
-// import wieWD4 from "../../asset/Events/WIE_WD/WIE_WD_4.jpg";
-// import wieWD5 from "../../asset/Events/WIE_WD/WIE_WD_5.jpg";
+
+
 
 const WIE = () => {
   const fadeIn = {
@@ -16,11 +12,10 @@ const WIE = () => {
   };
 
   const galleryImages = [
-    { src: wieWD1, alt: "WIE Women's Day Event 1" },
-    { src: wieWD2, alt: "WIE Women's Day Event 2" },
-    { src: wieWD3, alt: "WIE Women's Day Event 3" },
-    { src: wieWD4, alt: "WIE Women's Day Event 4" },
-    { src: wieWD5, alt: "WIE Women's Day Event 5" },
+    { src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093350/WIE_WD_1_lzivwg.webp" },
+    { src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093355/WIE_WD_2_matzy7.webp"},
+    { src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093353/WIE_WD_5_ciqgps.webp" },
+    
   ];
 
   return (
@@ -134,7 +129,7 @@ const WIE = () => {
               <div className="flex flex-col sm:flex-row">
                 <div className="sm:w-1/3">
                   <img
-                    src="/api/placeholder/300/300"
+                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093416/Dr_Krupa_okvig3.webp"
                     alt="Faculty Advisor"
                     className="w-full h-full object-cover"
                   />
@@ -175,8 +170,8 @@ const WIE = () => {
               {...fadeIn}
             >
               <img
-                src="/api/placeholder/150/150"
-                alt="Committee Member"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093345/Shrusti_nhcdtm.webp"
+                alt="Wie Chair"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-purple-500"
               />
               <h4 className="text-lg font-bold text-white">Shrusti Utturkar</h4>
@@ -191,8 +186,8 @@ const WIE = () => {
               transition={{ delay: 0.1 }}
             >
               <img
-                src="/api/placeholder/150/150"
-                alt="Committee Member"
+                // src="/api/placeholder/150/150"
+                alt="Wie Vice-Chair"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-purple-500"
               />
               <h4 className="text-lg font-bold text-white">
@@ -209,8 +204,8 @@ const WIE = () => {
               transition={{ delay: 0.2 }}
             >
               <img
-                src="/api/placeholder/150/150"
-                alt="Committee Member"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093348/Sharada_hl8zk6.webp"
+                alt="Wie Secretary"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-purple-500"
               />
               <h4 className="text-lg font-bold text-white">Sharada Ugare</h4>
@@ -225,8 +220,8 @@ const WIE = () => {
               transition={{ delay: 0.3 }}
             >
               <img
-                src="/api/placeholder/150/150"
-                alt="Committee Member"
+                // src="/api/placeholder/150/150"
+                alt="WIE Treasurer"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-purple-500"
               />
               <h4 className="text-lg font-bold text-white">Namrata Patil</h4>
@@ -241,8 +236,8 @@ const WIE = () => {
               transition={{ delay: 0.4 }}
             >
               <img
-                src="/api/placeholder/150/150"
-                alt="Committee Member"
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093339/Samuell_lyhqei.webp"
+                alt="Media Head"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-purple-500"
               />
               <h4 className="text-lg font-bold text-white">Samuilla Kustagi</h4>
@@ -271,7 +266,7 @@ const WIE = () => {
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/3">
                   <img
-                    src={wieWD1}
+                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093350/WIE_WD_1_lzivwg.webp"
                     alt="Women's Day Celebration"
                     className="w-full h-full object-cover"
                   />

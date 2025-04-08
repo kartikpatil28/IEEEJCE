@@ -387,7 +387,7 @@ function EventsPage(){
   return(
     <>
       <div className="bg-gradient-to-r from-black via-gray-900 to-black text-white flex flex-col justify-center items-center h-screen text-4xl font-bold font-serif">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
           "Preparing Something Amazing"
         </h1>
       <p className="text-xl md:text-2xl  text-gray-400">-JCE IEEE Web Team</p>
