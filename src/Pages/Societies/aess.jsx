@@ -133,7 +133,7 @@ const AESS = () => {
                   <img
                     src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093416/Dr_Krupa_okvig3.webp"
                     alt="Faculty Advisor"
-                    className="w-full h-64 object-cover"
+                    className="w-full h-95 object-cover object-top"
                   />
                 </div>
                 <div className="p-6 text-center">

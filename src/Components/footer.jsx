@@ -123,6 +123,16 @@ const Footer = () => {
                   Aerospace and Electronic Systems Society
                 </a>
               </li>
+              <li>
+                <a href="https://ieee-aess.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
+                  ComSoc
+                </a>
+              </li>
+              <li>
+                <a href="https://ieee-aess.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
+                  PES
+                </a>
+              </li>
             </ul>
           </div>
 

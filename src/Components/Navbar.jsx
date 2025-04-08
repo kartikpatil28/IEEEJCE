@@ -50,6 +50,7 @@ function Navbar() {
     { name: "IEEE Bangalore Section", url: "https://ieeebangalore.org/" },
     { name: "IEEE NKSS", url: "https://r10.ieee.org/north-karnataka/" },
     { name: "IEEE JCE", url: "https://www.jce.ac.in/ieee-sb/" },
+    { name: "JCE", url: "https://www.jce.ac.in/" },
     { name: "vTools", url: "https://vtools.vtools.ieee.org/" },
     { name: "More Sites", url: "https://www.ieee.org/sitemap.html" },
   ];
@@ -211,7 +212,7 @@ function Navbar() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
-                className="fixed inset-0 bg-black/95 backdrop-blur-lg z-50 lg:hidden"
+                className="fixed inset-0 bg-black z-50 lg:hidden"
                 onClick={toggleMenu}
               >
                 <motion.div
@@ -256,10 +257,11 @@ function Navbar() {
                         </li>
                       ))}
                     </ul>
+                    
 
                     {/* Societies */}
                     <div>
-                      <h3 className="text-xs uppercase text-blue-400 mb-2">Societies</h3>
+                      <h3 className="text-xs uppercase text-white mb-2">Societies</h3>
                       <div className="space-y-2">
                         {[
                           { name: "AESS", path: "/societies/aess" },

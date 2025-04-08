@@ -83,7 +83,7 @@ const AboutPage = () => {
             </h2>
             <div className="space-y-4 text-gray-300">
               <p>
-                Established in 2015, the IEEE JCE Student Branch has evolved into a vibrant community of <span className="text-blue-400 font-semibold">over 500 members</span>, united by a passion for technology and innovation.
+                Established in 2015, the IEEE JCE Student Branch has evolved into a vibrant community of <span className="text-blue-400 font-semibold">over 100 members</span>, united by a passion for technology and innovation.
               </p>
               <p>
                 Our initiatives span from immersive workshops and competitive hackathons to groundbreaking research projects, providing students with hands-on experience and valuable industry connections.
@@ -454,9 +454,9 @@ const testimonials = [
 ];
 
 const galleryImages = [
-  "src/asset/Events/CTC/Campus-to-Corporate-14.jpg",
-  "src/asset/Events/IEEE_Day/IEEE_Day_1.jpg", 
-  "src/asset/Events/Conference/Conference-1.jpg",
+  "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093350/WIE_WD_1_lzivwg.webp",
+  "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093428/Github_1_uuzamq.webp", 
+  "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093355/WIE_WD_2_matzy7.webp",
 ]; 
 
 export default AboutPage;
