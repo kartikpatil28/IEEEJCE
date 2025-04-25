@@ -99,7 +99,7 @@ const societies = [
   {
     logo: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093406/cs-logo_knyz6z.jpg",
     name: "Computer Society",
-    shortName: "CS",
+    shortName: "Not approved yet",
     description:
       "Advancing computer science and technology through professional development and networking.",
   },
@@ -241,11 +241,11 @@ const HeroSection = () => {
       </div>
 
       {/* Simple scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center p-1">
           <div className="w-1.5 h-1.5 bg-white rounded-full animate-bounce"></div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

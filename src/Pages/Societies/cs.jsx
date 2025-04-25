@@ -97,7 +97,7 @@ const ComputerSociety = () => {
             </div>
 
             {/* Chair */}
-            <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden border border-gray-700">
+            {/* <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden border border-gray-700">
               <div className="flex flex-col sm:flex-row">
                 <div className="sm:w-1/3">
                   <img
@@ -119,7 +119,7 @@ const ComputerSociety = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

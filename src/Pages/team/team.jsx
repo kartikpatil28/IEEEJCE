@@ -37,7 +37,7 @@ function Team() {
       category: "IEEE",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744792491/Vinayak_am2zxn.webp",
       name: "Vinayak A",
       title: "Membership Coordinator",
       category: "IEEE",
@@ -57,7 +57,7 @@ function Team() {
        title: "WIE Chair",
         category: "WIE" },
     {
-      // image: varsha,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744792823/shreya_qq8efa.jpg",
       name: "Shreya Dappadhuli",
       title: "WIE Vice Chair",
       category: "WIE",
@@ -69,7 +69,7 @@ function Team() {
       category: "WIE",
     },
     {
-      // image: pawan,
+      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744792561/Namrata_ce2dpy.jpg",
       name: "Namrata Mohan Patil",
       title: "WIE Treasurer",
       category: "WIE",
@@ -116,12 +116,12 @@ function Team() {
       title: "AESS Media Head",
       category: "AESS",
     },
-    {
-      image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093340/Shruti_pouqux.webp",
-      name: "Shrutika",
-      title: "CS Chair",
-      category: "CS",
-    },
+    // {
+    //   image: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093340/Shruti_pouqux.webp",
+    //   name: "Shrutika",
+    //   title: "CS Chair",
+    //   category: "CS",
+    // },
     
   ];
 

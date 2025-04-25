@@ -124,13 +124,13 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://ieee-aess.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
-                  ComSoc
+                <a href="https://www.comsoc.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
+                  Communication Society(ComSoc)
                 </a>
               </li>
               <li>
-                <a href="https://ieee-aess.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
-                  PES
+                <a href="https://ieee-pes.org/" className="text-white  hover:text-blue-400 transition duration-300 no-underline hover:underline">
+                  Power & Energy Society(PES)
                 </a>
               </li>
             </ul>
@@ -156,7 +156,7 @@ const Footer = () => {
                 <i className="fab fa-whatsapp text-2xl text-green-500"></i>
               </a>
               <a
-                href="https://www.instagram.com/your-instagram-link"
+                href="https://www.instagram.com/ieee_jce?igsh=MXNwZ2t4MHQ2YWtoeg=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-600 transition duration-300 no-underline hover:underline"
@@ -164,7 +164,7 @@ const Footer = () => {
                 <i className="fab fa-instagram text-2xl text-pink-500"></i>
               </a>
               <a
-                href="https://www.linkedin.com/your-linkedin-link"
+                href="https://www.linkedin.com/company/ieee-jce?trk=feed-detail_main-feed-card_feed-actor-nam"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="  transition duration-300 no-underline hover:underline"
