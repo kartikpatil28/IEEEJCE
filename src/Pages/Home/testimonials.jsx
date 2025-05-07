@@ -48,25 +48,25 @@ const testimonials = [
   {
     name: "Chandan K",
     affiliation: "Electronics and Communication Engineering",
-    text: "Being part of WIE has been transformative. I've found mentors who have guided my research interests and supported my growth in a male-dominated field.",
+    text: "Taking part in IEEE hackathons pushed me out of my comfort zone. I learned how to manage time, divide work efficiently, and most importantly, build solutions under pressure",
     imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093416/Chandan_jfg2ie.webp"
   },
   {
     name: "Chaitra K",
     affiliation: "Electronics and Communication Engineering",
-    text: "The most useful IEEE resource for me has been the technical library access. It's hands down the best benefit for research students like me.",
+    text: "The hands-on workshops were a highlight of my IEEE journey. From IoT to basic circuit design, I explored topics that weren’t deeply covered in class. It made learning exciting",
     imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093418/Chaitra_o5ulkp.webp"
   },
   {
     name: "Abhishek",
     affiliation: "Electronics and Communication Engineering",
-    text: "IEEE's professional network helped me land my first internship. The industry connections through the chapter are invaluable for career growth.",
+    text: "Through IEEE, I found out about an internship opportunity shared during a club meeting. It was my first step into practical experience, and I wouldn’t have known about it otherwise.",
     imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093420/Abhishek_t8kgjx.webp"
   },
   {
     name: "Kshiti",
     affiliation: "Electronics and Communication Engineering",
-    text: "The IEEE workshops on machine learning were exactly what I needed to bridge the gap between theory and implementation. Now I'm leading our college's AI team.",
+    text: "I loved how IEEE combined technical activities with fun and creativity. We had tech quizzes, coding marathons, and even casual meetups that brought everyone closer",
     imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093411/Kshiti_lssm4j.webp"
   },
 ];
@@ -76,31 +76,31 @@ const moreTestimonials = [
   {
     name: "Narayan Sabale",
     affiliation: "Electronics and Communication Engineering",
-    text: "The Cursor tab completion in IEEE coding workshops is occasionally so helpful it defies reality - about ~25% of the time it's anticipating exactly what I want to do.",
+    text: "IEEE gave me the space to work with people outside my department. I got to collaborate with coders, designers, and even business students. That kind of exposure is rare in college",
     imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093410/Narayan_d881jv.webp"
   },
   {
     name: "Rahul Halkarni",
     affiliation: "Electronics and Communication Engineering",
-    text: "It's amazing having IEEE as a programming partner, and is an incredible accelerator for me and my team's projects in robotics competitions.",
+    text: "The speaker sessions arranged by IEEE were always insightful. I remember one session where the guest talked about real industry challenges—it completely changed how I looked at engineering.",
     imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093415/Rahul_gmjkwd.webp"
   },
   {
     name: "Shreedhar",
     affiliation: "Electronics and Communication Engineering",
-    text: "The most useful AI tool that I currently pay for is, hands down, IEEE's resource access. It's fast, handles complex topics, and delivers quality information.",
+    text: "What kept me hooked to IEEE was the consistency—every month had something new to look forward to. A bootcamp here, a workshop there, it kept me curious and engaged.”",
     imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093417/Shreedhar_rj3apb.webp"
   },
   {
     name: "Varsha",
     affiliation: "Electronics and Communication Engineering",
-    text: "IEEE is the best technical resource tool I've found. Join it, avoid missing out at your own peril. The networking alone is worth the membership fee.",
+    text: "IEEE gave me the space to work with people outside my department. I got to collaborate with coders, designers, and even business students. That kind of exposure is rare in college.",
     imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093413/Varsha_bgjlc7.webp"
   },
   {
     name: "Pawan",
     affiliation: "Electronics and Communication Engineering",
-    text: "Being part of IEEE is enough to make you believe eventually you'll be able to innovate at the speed of thought. The workshops accelerate your learning curve tremendously.",
+    text: "IEEE conferences were more than just events—they were a space to listen, learn, and connect with people who genuinely loved tech. The discussions I had there stuck with me long after.",
     imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093412/pawan_qyubat.webp"
   },
 ];

@@ -81,7 +81,7 @@ const Contact = () => {
               <h3 className="text-xl font-semibold text-white mb-4">Connect With Us</h3>
               <div className="flex space-x-4">
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/company/ieee-jce?trk=feed-detail_main-feed-card_feed-actor-nam" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition-all duration-300"
@@ -89,7 +89,7 @@ const Contact = () => {
                   <FaLinkedin size={24} />
                 </a>
                 <a 
-                  href="https://twitter.com" 
+                  href="https://x.com/JCE_IEEE?t=-OojvO9YY06Wib1wzoaTeg&s=09" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300"
@@ -97,7 +97,7 @@ const Contact = () => {
                   <FaTwitter size={24} />
                 </a>
                 <a 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/ieee_jce?igsh=MXNwZ2t4MHQ2YWtoeg==" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-blue-400 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:text-white transition-all duration-300"
@@ -105,7 +105,7 @@ const Contact = () => {
                   <FaInstagram size={24} />
                 </a>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/kartikpatil28/IEEEJCE" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-blue-400 hover:bg-gray-600 hover:text-white transition-all duration-300"
