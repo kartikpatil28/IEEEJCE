@@ -122,7 +122,7 @@ function Navbar() {
             <img
               src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093403/JCE-logo_tqphb8.png"
               alt="JCE Logo"
-              className="h-10 sm:h-12 md:h-16 object-contain hover:brightness-110 transition-all duration-300"
+              className="h-16 sm:h-14 md:h-16 object-contain hover:brightness-110 transition-all duration-300"
             />
           </NavLink>
 
@@ -206,7 +206,7 @@ function Navbar() {
 
           {/* Mobile Hamburger */}
           <button
-            className="lg:hidden flex items-center px-3 py-2 border border-blue-700 rounded text-blue-400 hover:text-white hover:bg-blue-700/20 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="lg:hidden flex items-center px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-700/20 focus:outline-none"
             onClick={toggleMenu}
             aria-label="Open main menu"
           >
@@ -224,7 +224,7 @@ function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.2 }}
-              className="lg:hidden absolute left-0 right-0 top-full bg-black border-t border-gray-800 shadow-xl rounded-b-xl px-4 py-6 z-40"
+              className="lg:hidden absolute left-0 right-0 top-full bg-black shadow-xl rounded-b-xl px-4 py-6 z-40"
             >
               <div className="max-h-[70vh] overflow-y-auto px-4 py-6">
                 <ul className="flex flex-col gap-2 text-white font-medium text-lg">
@@ -264,7 +264,7 @@ function Navbar() {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}
                           transition={{ duration: 0.2 }}
-                          className="bg-black rounded-lg shadow-lg py-2 w-full border border-gray-700 mt-2"
+                          className="bg-black rounded-lg shadow-lg py-2 w-full mt-2"
                         >
                           {[{ name: "AESS", path: "/societies/aess" }, { name: "Computer Society (CS)", path: "/societies/cs" }, { name: "Women in Engineering (WIE)", path: "/societies/wie" }].map((society) => (
                             <button
@@ -282,7 +282,7 @@ function Navbar() {
                   </li>
 
                   {/* IEEE Links for Mobile */}
-                  <li className="mt-4 pt-4 border-t border-gray-700">
+                  <li className="mt-4 pt-4">
                     <div className="px-4 mb-2 text-sm text-gray-400">IEEE Links</div>
                     <div className="grid grid-cols-2 gap-2">
                       {ieeeLinks.map((link, index) => (

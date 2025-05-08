@@ -260,7 +260,7 @@ function Team() {
                 <div className="w-28 h-28 sm:w-40 sm:h-40 rounded-full border-4 border-white overflow-hidden flex items-center justify-center bg-gray-200">
                   {/* Replace SVG with actual image */}
                   <img
-                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1743346346/assets/asset/Photos/anxznimgrkvbnro5pxlc.jpg"
+                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093416/Dr_Krupa_okvig3.webp"
                     alt="Dr. Krupa Rasane"
                     className="w-full h-full object-cover object-center"
                   />
