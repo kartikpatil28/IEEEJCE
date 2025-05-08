@@ -25,8 +25,8 @@ This project was built using the following technologies:
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/jce-ieee-website.git
-cd jce-ieee-website
+git clone https://github.com/kartikpatil28/IEEEJCE.git
+cd IEEEJCE
 npm install
 
 ```
