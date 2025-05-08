@@ -161,76 +161,42 @@ const SectionTitle = ({ title, subtitle, light = false }) => {
   );
 };
 
+// Replace the HeroSection with a new editorial, two-column layout
 const HeroSection = () => (
-  <section className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900">
-    {/* Animated SVG or floating icons */}
-    <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1 }}
-      className="absolute inset-0 pointer-events-none"
-    >
-      <svg className="absolute top-0 left-0 w-64 h-64 opacity-30 animate-spin-slow" viewBox="0 0 200 200">
-        <circle cx="100" cy="100" r="80" fill="none" stroke="#60a5fa" strokeWidth="8" strokeDasharray="20 10" />
-      </svg>
-      <svg className="absolute bottom-0 right-0 w-80 h-80 opacity-20 animate-pulse" viewBox="0 0 200 200">
-        <rect x="30" y="30" width="140" height="140" rx="40" fill="#a78bfa" />
-      </svg>
-    </motion.div>
-
-    {/* Content */}
-    <div className="relative z-10 w-full max-w-3xl px-4 pt-32 pb-12 text-center flex flex-col items-center">
-      <motion.h1
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg"
-      >
-        Empowering <span className="text-blue-400">Students</span> to Lead, Learn, and Innovate
-      </motion.h1>
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-        className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto"
-      >
-        Welcome to the IEEE Student Branch at Jain College of Engineering, Belagavi. Connect, collaborate, and grow with a vibrant community dedicated to technology, leadership, and personal development.
-      </motion.p>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.6 }}
-        className="flex flex-col sm:flex-row gap-4 justify-center mb-10"
-      >
+  <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
+    {/* Remove animated gradient blob for a cleaner look */}
+    <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-20 md:py-0 gap-12 md:gap-0 relative z-10">
+      {/* Left: Text Content */}
+      <div className="flex-1 flex flex-col justify-center items-start z-10 text-left max-w-xl">
+        <h1 className="text-[2.8rem] sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-none text-white mb-4 drop-shadow-xl" style={{fontFamily: 'Montserrat, Arial, sans-serif', letterSpacing: '-0.04em', textShadow: '0 4px 24px rgba(0,0,0,0.7)'}}>
+          IEEE<br />
+          <span className="text-blue-400">STUDENT BRANCH</span>
+        </h1>
+        <h2 className="text-2xl sm:text-3xl font-light text-white mb-6 tracking-wide drop-shadow-lg" style={{fontFamily: 'Montserrat, Arial, sans-serif', textShadow: '0 2px 12px rgba(0,0,0,0.6)'}}>Jain College of Engineering, Belagavi</h2>
+        <p className="text-lg text-blue-100 mb-8 max-w-md drop-shadow" style={{textShadow: '0 1px 8px rgba(0,0,0,0.5)'}}>
+          A vibrant community of innovators, leaders, and learners. Join us to connect, collaborate, and grow in technology and beyond.
+        </p>
         <Link
-          to="/membership"
-          className="inline-flex items-center justify-center px-8 py-3 text-lg font-semibold rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg hover:from-blue-600 hover:to-indigo-600 hover:scale-105 transition-all duration-300"
+          to="/about"
+          className="inline-block px-8 py-3 text-lg font-semibold rounded-full bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-xl hover:from-blue-600 hover:to-blue-800 hover:shadow-blue-400/60 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-400/40"
         >
-          Join Now <FaArrowRight className="ml-2" />
+          See More
         </Link>
-        <a
-          href="#events"
-          className="inline-flex items-center justify-center px-8 py-3 text-lg font-semibold rounded-full border-2 border-white text-white hover:bg-white hover:text-blue-700 hover:scale-105 transition-all duration-300"
-        >
-          Upcoming Events
-        </a>
-      </motion.div>
-      {/* Quick Stats Bar */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-        className="flex flex-wrap justify-center gap-6 md:gap-12 bg-white/10 rounded-xl py-4 px-6 md:px-12 shadow-lg backdrop-blur-md"
-      >
-        {stats.map((stat, i) => (
-          <div key={stat.label} className="flex flex-col items-center min-w-[90px]">
-            <span className="text-blue-200 mb-1">{stat.icon}</span>
-            <span className="text-2xl font-bold text-white">{stat.value}+</span>
-            <span className="text-blue-100 text-sm font-medium">{stat.label}</span>
-          </div>
-        ))}
-      </motion.div>
+      </div>
+      {/* Right: Group Image */}
+      <div className="flex-1 flex items-center justify-center relative w-full md:w-auto h-[400px] md:h-[600px] max-h-[80vh]">
+        {/* Only a subtle blue overlay for vibrancy, no pink/purple */}
+        <div className="absolute inset-0 bg-gradient-to-l from-black/70 via-transparent to-blue-900/10 z-10 rounded-2xl" />
+        <img
+          src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093349/Execom-1_nx7odq.webp"
+          alt="IEEE Student Branch Group"
+          className="w-full h-full object-cover object-center grayscale rounded-2xl shadow-2xl border-4 border-blue-900/20 z-0"
+          style={{ filter: 'grayscale(0.7) contrast(1.08)' }}
+        />
+      </div>
     </div>
+    {/* Subtle vignette overlay for drama */}
+    <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80 z-20" />
   </section>
 );
 

@@ -22,7 +22,7 @@ const AESS = () => {
     <div className="min-h-screen bg-gray-900 text-gray-200">
       {/* Hero Section */}
       <motion.div
-        className="p-8 bg-gradient-to-r from-gray-900 to-blue-900 text-white text-center"
+        className="px-4 py-10 md:px-8 md:py-16 bg-gradient-to-r from-gray-900 to-blue-900 text-white text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -37,17 +37,17 @@ const AESS = () => {
           <img
             src="https://brand-experience.ieee.org/wp-content/uploads/2020/07/IEEE-AESS-Logo-RGB.png"
             alt="IEEE Aerospace & Electronic Systems Society Logo"
-            className="h-32 mx-auto border rounded-full shadow-lg hover:shadow-blue-500/50 transition-shadow duration-300"
+            className="h-24 w-24 md:h-32 md:w-32 mx-auto border rounded-full shadow-lg hover:shadow-blue-500/50 transition-shadow duration-300 object-cover"
           />
         </motion.div>
         <motion.h1
-          className="text-6xl md:text-7xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400"
+          className="text-4xl md:text-6xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400"
           {...fadeIn}
         >
           Aerospace & Electronic Systems Society
         </motion.h1>
         <motion.h2
-          className="text-xl mb-6"
+          className="text-lg md:text-xl mb-6"
           {...fadeIn}
           transition={{ delay: 0.2 }}
         >
@@ -58,7 +58,7 @@ const AESS = () => {
           {...fadeIn}
           transition={{ delay: 0.3 }}
         >
-          <p className="text-lg">
+          <p className="text-base md:text-lg">
             Advancing innovation in aerospace, electronics, and systems
             engineering. We provide a platform for students to explore
             cutting-edge technologies, network with industry professionals, and
@@ -68,7 +68,7 @@ const AESS = () => {
       </motion.div>
 
       {/* Vision and Mission Section */}
-      <div className="p-8 bg-black">
+      <div className="px-4 py-8 md:px-8 md:py-12 bg-black">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Vision */}
@@ -77,14 +77,14 @@ const AESS = () => {
               whileHover={{ scale: 1.02 }}
               {...fadeIn}
             >
-              <h2 className="text-2xl font-bold text-blue-400 mb-4 text-center">
+              <h2 className="text-xl md:text-2xl font-bold text-blue-400 mb-4 text-center">
                 Vision
               </h2>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-base md:text-lg">
                 The vision of the AESS is to be essential to the worldwide
                 technical community and be recognized for outstanding
                 contributions in the fields of aerospace and electronic systems
-                as demonstrated through the Society’s products, service and
+                as demonstrated through the Society's products, service and
                 offerings in the areas of conferences, publications, education,
                 technical operations, industry relations, and member services.
               </p>
@@ -97,10 +97,10 @@ const AESS = () => {
               {...fadeIn}
               transition={{ delay: 0.2 }}
             >
-              <h2 className="text-2xl font-bold text-cyan-400 mb-4 text-center">
+              <h2 className="text-xl md:text-2xl font-bold text-cyan-400 mb-4 text-center">
                 Mission
               </h2>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-base md:text-lg">
                 The mission of the AESS is to provide a responsive and relevant
                 professional society that attracts, engages, aids, and retains a
                 diverse set of members (age, culture, community – theoretical,
@@ -116,10 +116,10 @@ const AESS = () => {
       </div>
 
       {/* Committee Section */}
-      <div className="p-8 bg-gray-900">
-        <div className="max-w-4xl mx-auto">
+      <div className="px-4 py-8 md:px-8 md:py-12 bg-gray-900">
+        <div className="max-w-4xl mx-auto w-full">
           <motion.h2
-            className="text-3xl font-bold text-center text-blue-400 mb-8"
+            className="text-2xl md:text-3xl font-bold text-center text-blue-400 mb-8"
             {...fadeIn}
           >
             Committee
@@ -127,37 +127,35 @@ const AESS = () => {
 
           {/* Advisor */}
           <motion.div className="flex justify-center mb-12" {...fadeIn}>
-            <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-300 max-w-xl w-full">
-              <div className="flex flex-col">
-                <div className="w-full">
-                  <img
-                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093416/Dr_Krupa_okvig3.webp"
-                    alt="Faculty Advisor"
-                    className="w-full h-95 object-cover object-top"
-                  />
-                </div>
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-bold text-white mb-1">
-                    Dr. Krupa Rasane
-                  </h3>
-                  <p className="text-blue-400 font-semibold mb-3">
-                    Faculty Advisor
-                  </p>
-                  <p className="text-gray-400 text-sm">
-                    Professor, Department of Electronics and Communication
-                    Engineering
-                  </p>
-                  <p className="text-gray-400 text-sm mt-2">
-                    Email: drkruparasane@jce.edu
-                  </p>
-                </div>
+            <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-300 max-w-xl w-full flex flex-col sm:flex-row">
+              <div className="sm:w-1/3 w-full">
+                <img
+                  src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093416/Dr_Krupa_okvig3.webp"
+                  alt="Faculty Advisor"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6 sm:w-2/3 w-full text-center">
+                <h3 className="text-lg md:text-xl font-bold text-white mb-1">
+                  Dr. Krupa Rasane
+                </h3>
+                <p className="text-blue-400 font-semibold mb-3">
+                  Faculty Advisor
+                </p>
+                <p className="text-gray-400 text-sm md:text-base">
+                  Professor, Department of Electronics and Communication
+                  Engineering
+                </p>
+                <p className="text-gray-400 text-sm md:text-base mt-2">
+                  Email: drkruparasane@jce.edu
+                </p>
               </div>
             </div>
           </motion.div>
 
           {/* Committee Members */}
           <motion.h3
-            className="text-2xl font-bold text-center text-blue-400 mt-12 mb-6"
+            className="text-xl md:text-2xl font-bold text-center text-blue-400 mt-12 mb-6"
             {...fadeIn}
           >
             Execom
@@ -172,9 +170,9 @@ const AESS = () => {
               <img
                 src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093346/Muskan_hpd9df.webp"
                 alt="AESS Chair"
-                className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
+                className="w-20 h-20 md:w-24 md:h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />
-              <h4 className="text-lg font-bold text-white">
+              <h4 className="text-base md:text-lg font-bold text-white">
                 Muskan Abdul Latif Dhalayat
               </h4>
               <p className="text-blue-400">AESS Chair</p>
@@ -190,9 +188,9 @@ const AESS = () => {
               <img
                 src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093343/Radhika_mbv70h.webp"
                 alt="Committee Member"
-                className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
+                className="w-20 h-20 md:w-24 md:h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-blue-500"
               />
-              <h4 className="text-lg font-bold text-white">
+              <h4 className="text-base md:text-lg font-bold text-white">
                 Radhika Kiran Lohar
               </h4>
               <p className="text-blue-400">AESS Vice-Chair</p>

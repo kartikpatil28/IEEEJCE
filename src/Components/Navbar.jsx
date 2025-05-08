@@ -113,7 +113,7 @@ function Navbar() {
         }`}
         aria-label="Main Navigation"
       >
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="max-w-7xl mx-auto flex flex-row justify-between items-center gap-2 sm:gap-4">
           {/* Logo */}
           <NavLink to="/home" onClick={() => handleLinkClick("/home")}
             className="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
@@ -122,9 +122,8 @@ function Navbar() {
             <img
               src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093403/JCE-logo_tqphb8.png"
               alt="JCE Logo"
-              className="h-12 md:h-16 object-contain hover:brightness-110 transition-all duration-300"
+              className="h-10 sm:h-12 md:h-16 object-contain hover:brightness-110 transition-all duration-300"
             />
-            
           </NavLink>
 
           {/* Desktop Links */}
@@ -205,116 +204,109 @@ function Navbar() {
             </ul>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Hamburger */}
           <button
-            className="lg:hidden text-white p-2 rounded-lg hover:bg-blue-700/20 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+            className="lg:hidden flex items-center px-3 py-2 border border-blue-700 rounded text-blue-400 hover:text-white hover:bg-blue-700/20 focus:outline-none focus:ring-2 focus:ring-blue-500"
             onClick={toggleMenu}
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            aria-label="Open main menu"
           >
-            <i className={`fa ${isMenuOpen ? "fa-times" : "fa-bars"} text-xl`} />
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
           </button>
+        </div>
 
-          {/* Mobile Menu */}
-          <AnimatePresence>
-            {isMenuOpen && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.2 }}
-                className="fixed inset-0 bg-black/90 z-50 lg:hidden"
-                onClick={toggleMenu}
-              >
-                <motion.div
-                  initial={{ x: "100%" }}
-                  animate={{ x: 0 }}
-                  exit={{ x: "100%" }}
-                  transition={{ duration: 0.3 }}
-                  className="fixed right-0 top-0 h-full w-4/5 max-w-xs bg-black p-6 shadow-2xl flex flex-col"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <div className="flex justify-between items-center mb-6">
-                    <h2 className="text-xl font-bold text-white">IEEE JCE</h2>
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.2 }}
+              className="lg:hidden absolute left-0 right-0 top-full bg-black border-t border-gray-800 shadow-xl rounded-b-xl px-4 py-6 z-40"
+            >
+              <div className="max-h-[70vh] overflow-y-auto px-4 py-6">
+                <ul className="flex flex-col gap-2 text-white font-medium text-lg">
+                  {links.map((link) => (
+                    <li key={link.name}>
+                      <NavLink
+                        to={link.path}
+                        onClick={() => handleLinkClick(link.path)}
+                        className={({ isActive }) =>
+                          `block px-4 py-3 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 no-underline ${
+                            isActive
+                              ? "text-white bg-blue-700/20 shadow"
+                              : "text-white hover:bg-blue-700/10 hover:text-blue-400"
+                          }`
+                        }
+                        aria-label={link.name}
+                      >
+                        {link.name}
+                      </NavLink>
+                    </li>
+                  ))}
+                  {/* Societies Dropdown for Mobile */}
+                  <li>
                     <button
-                      onClick={toggleMenu}
-                      className="text-white hover:bg-blue-700/20 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      aria-label="Close menu"
+                      className="w-full flex items-center justify-between px-4 py-3 rounded-full text-white bg-blue-700/10 hover:bg-blue-700/20 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-2"
+                      onClick={() => setIsSocietiesOpen(!isSocietiesOpen)}
+                      aria-haspopup="true"
+                      aria-expanded={isSocietiesOpen}
                     >
-                      <i className="fa fa-times text-xl" />
+                      Societies
+                      <i className={`fa fa-chevron-down ml-2 text-xs transition-transform duration-300 ${isSocietiesOpen ? "rotate-180" : ""}`} />
                     </button>
-                  </div>
+                    <AnimatePresence>
+                      {isSocietiesOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          transition={{ duration: 0.2 }}
+                          className="bg-black rounded-lg shadow-lg py-2 w-full border border-gray-700 mt-2"
+                        >
+                          {[{ name: "AESS", path: "/societies/aess" }, { name: "Computer Society (CS)", path: "/societies/cs" }, { name: "Women in Engineering (WIE)", path: "/societies/wie" }].map((society) => (
+                            <button
+                              key={society.name}
+                              onClick={() => handleSocietiesClick(society.path, society.name)}
+                              className={`block w-full text-left px-4 py-2 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 ${activeSociety === society.name ? "text-white bg-blue-700/30" : "text-white hover:bg-blue-700/20 hover:text-blue-400"} transition-all duration-200`}
+                              aria-label={society.name}
+                            >
+                              {society.name}
+                            </button>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </li>
 
-                  <div className="space-y-6 flex-1">
-                    {/* Navigation */}
-                    <ul className="space-y-2">
-                      {links.map((link) => (
-                        <li key={link.name}>
-                          <NavLink
-                            to={link.path}
-                            onClick={() => {
-                              toggleMenu();
-                              handleLinkClick(link.path);
-                            }}
-                            className={({ isActive }) =>
-                              `block px-4 py-2 rounded-lg transition-all duration-200 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 no-underline ${
-                                isActive
-                                  ? "text-white bg-blue-700/30 shadow"
-                                  : "text-white hover:bg-blue-700/20 hover:text-blue-400"
-                              }`
-                            }
-                            aria-label={link.name}
-                          >
-                            {link.name}
-                          </NavLink>
-                        </li>
-                      ))}
-                    </ul>
-
-                    {/* Societies */}
-                    <div>
-                      <h3 className="text-xs uppercase text-white mb-2 tracking-wider">Societies</h3>
-                      <div className="space-y-2">
-                        {[
-                          { name: "AESS", path: "/societies/aess" },
-                          { name: "Computer Society (CS)", path: "/societies/cs" },
-                          { name: "Women in Engineering (WIE)", path: "/societies/wie" },
-                        ].map((society) => (
-                          <button
-                            key={society.name}
-                            onClick={() => {
-                              handleSocietiesClick(society.path, society.name);
-                              toggleMenu();
-                            }}
-                            className="block w-full text-left px-4 py-2 text-base text-white hover:bg-blue-700/20 hover:text-blue-400 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            aria-label={society.name}
-                          >
-                            {society.name}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Social Links */}
-                    <div className="flex justify-center gap-4 mt-8">
-                      {socialLinks.map((link, index) => (
+                  {/* IEEE Links for Mobile */}
+                  <li className="mt-4 pt-4 border-t border-gray-700">
+                    <div className="px-4 mb-2 text-sm text-gray-400">IEEE Links</div>
+                    <div className="grid grid-cols-2 gap-2">
+                      {ieeeLinks.map((link, index) => (
                         <a
                           key={index}
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-10 h-10 flex items-center justify-center text-white hover:bg-blue-700/20 rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                          aria-label={link.icon}
+                          className="px-4 py-2 text-sm text-gray-300 hover:text-blue-400 hover:bg-blue-700/10 rounded-lg transition-all duration-300"
                         >
-                          <i className={`fab fa-${link.icon} text-xl`} />
+                          {link.name === "IEEE Xplore Digital Library" ? (
+                            <>IEEE <span className="italic">Xplore</span></>
+                          ) : (
+                            link.name
+                          )}
                         </a>
                       ))}
                     </div>
-                  </div>
-                </motion.div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </>
   );

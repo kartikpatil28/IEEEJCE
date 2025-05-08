@@ -22,7 +22,7 @@ const WIE = () => {
     <div className="min-h-screen bg-gray-900 text-gray-200">
       {/* Hero Section - Black Theme with Larger WIE Title */}
       <motion.div
-        className="p-8 bg-gradient-to-r from-gray-900 to-purple-900 text-white text-center"
+        className="px-4 py-10 md:px-8 md:py-16 bg-gradient-to-r from-gray-900 to-purple-900 text-white text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -37,17 +37,17 @@ const WIE = () => {
           <img
             src="https://entrepreneurship.ieee.org/wp-content/uploads/2020/04/WIE-Logo-250x250-1.png"
             alt="IEEE Women in Engineering Logo"
-            className="h-32 mx-auto border rounded-full shadow-lg hover:shadow-purple-500/50 transition-shadow duration-300"
+            className="h-24 w-24 md:h-32 md:w-32 mx-auto border rounded-full shadow-lg hover:shadow-purple-500/50 transition-shadow duration-300 object-cover"
           />
         </motion.div>
         <motion.h1
-          className="text-6xl md:text-7xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400"
+          className="text-4xl md:text-6xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400"
           {...fadeIn}
         >
           Women in Engineering
         </motion.h1>
         <motion.h2
-          className="text-xl mb-6"
+          className="text-lg md:text-xl mb-6"
           {...fadeIn}
           transition={{ delay: 0.2 }}
         >
@@ -58,7 +58,7 @@ const WIE = () => {
           {...fadeIn}
           transition={{ delay: 0.3 }}
         >
-          <p className="text-lg">
+          <p className="text-base md:text-lg">
             Empowering women in technology through community, resources, and
             opportunities. We promote diversity and inclusion in STEM fields by
             creating supportive spaces for learning, networking, and
@@ -68,7 +68,7 @@ const WIE = () => {
       </motion.div>
 
       {/* Vision and Mission Section */}
-      <div className="p-8 bg-black">
+      <div className="px-4 py-8 md:px-8 md:py-12 bg-black">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Vision */}
@@ -77,10 +77,10 @@ const WIE = () => {
               whileHover={{ scale: 1.02 }}
               {...fadeIn}
             >
-              <h2 className="text-2xl font-bold text-purple-400 mb-4 text-center">
+              <h2 className="text-xl md:text-2xl font-bold text-purple-400 mb-4 text-center">
                 Vision
               </h2>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-base md:text-lg">
                 To be globally recognized for its contributions in STEM fields.
                 Our goal is to facilitate the recruitment and retention of women
                 in technical disciplines globally. We envision a vibrant
@@ -96,10 +96,10 @@ const WIE = () => {
               {...fadeIn}
               transition={{ delay: 0.2 }}
             >
-              <h2 className="text-2xl font-bold text-blue-400 mb-4 text-center">
+              <h2 className="text-xl md:text-2xl font-bold text-blue-400 mb-4 text-center">
                 Mission
               </h2>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-base md:text-lg">
                 To connect, support, and inspire women and girls worldwide, and
                 facilitate their recruitment and retention in STEM fields,
                 fostering technological innovation and excellence for the
@@ -111,10 +111,10 @@ const WIE = () => {
       </div>
 
       {/* Committee Section */}
-      <div className="flex justify-center items-center p-8 bg-gray-900">
-        <div className="max-w-4xl mx-auto">
+      <div className="flex justify-center items-center px-4 py-8 md:px-8 md:py-12 bg-gray-900">
+        <div className="max-w-4xl mx-auto w-full">
           <motion.h2
-            className="text-3xl font-bold text-center text-purple-400 mb-8"
+            className="text-2xl md:text-3xl font-bold text-center text-purple-400 mb-8"
             {...fadeIn}
           >
             Committee
@@ -122,42 +122,38 @@ const WIE = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Advisor */}
             <motion.div
-              className="bg-gray-800 rounded-lg shadow-md overflow-hidden border border-gray-700 hover:border-purple-500 transition-all duration-300"
+              className="bg-gray-800 rounded-lg shadow-md overflow-hidden border border-gray-700 hover:border-purple-500 transition-all duration-300 flex flex-col sm:flex-row"
               whileHover={{ scale: 1.02 }}
               {...fadeIn}
             >
-              <div className="flex flex-col sm:flex-row">
-                <div className="sm:w-1/3">
-                  <img
-                    src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093416/Dr_Krupa_okvig3.webp"
-                    alt="Faculty Advisor"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6 sm:w-2/3">
-                  <h3 className="text-xl font-bold text-white mb-1">
-                    Dr. Krupa Rasane
-                  </h3>
-                  <p className="text-purple-400 font-semibold mb-3">
-                    Faculty Advisor
-                  </p>
-                  <p className="text-gray-400 text-sm">
-                    Professor, Department of Electronics and Communication
-                    Engineering
-                  </p>
-                  <p className="text-gray-400 text-sm mt-2">
-                    Email: drkruparasane@jce.edu
-                  </p>
-                </div>
+              <div className="sm:w-1/3 w-full">
+                <img
+                  src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093416/Dr_Krupa_okvig3.webp"
+                  alt="Faculty Advisor"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6 sm:w-2/3 w-full">
+                <h3 className="text-lg md:text-xl font-bold text-white mb-1">
+                  Dr. Krupa Rasane
+                </h3>
+                <p className="text-purple-400 font-semibold mb-3">
+                  Faculty Advisor
+                </p>
+                <p className="text-gray-400 text-sm md:text-base">
+                  Professor, Department of Electronics and Communication
+                  Engineering
+                </p>
+                <p className="text-gray-400 text-sm md:text-base mt-2">
+                  Email: drkruparasane@jce.edu
+                </p>
               </div>
             </motion.div>
-
-            
           </div>
 
           {/* Committee Members */}
           <motion.h3
-            className="text-2xl font-bold text-center text-purple-400 mt-12 mb-6"
+            className="text-xl md:text-2xl font-bold text-center text-purple-400 mt-12 mb-6"
             {...fadeIn}
           >
             Committee Members
@@ -172,9 +168,9 @@ const WIE = () => {
               <img
                 src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093345/Shrusti_nhcdtm.webp"
                 alt="Wie Chair"
-                className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-purple-500"
+                className="w-20 h-20 md:w-24 md:h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-purple-500"
               />
-              <h4 className="text-lg font-bold text-white">Shrusti Utturkar</h4>
+              <h4 className="text-base md:text-lg font-bold text-white">Shrusti Utturkar</h4>
               <p className="text-purple-400">WIE Chair</p>
             </motion.div>
 
@@ -188,9 +184,9 @@ const WIE = () => {
               <img
                 // src="/api/placeholder/150/150"
                 alt="Wie Vice-Chair"
-                className="w-24 h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-purple-500"
+                className="w-20 h-20 md:w-24 md:h-24 object-cover rounded-full mx-auto mb-3 ring-2 ring-purple-500"
               />
-              <h4 className="text-lg font-bold text-white">
+              <h4 className="text-base md:text-lg font-bold text-white">
                 Shreya Dappadhuli
               </h4>
               <p className="text-purple-400">WIE Vice-Chair</p>

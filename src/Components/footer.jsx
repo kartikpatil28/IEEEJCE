@@ -165,12 +165,22 @@ const Footer = () => {
                 <i className="fab fa-x-twitter text-2xl text-white hover:text-gray-300"></i>
               </a>
               <a
-                href="https://x.com/JCE_IEEE?t=-OojvO9YY06Wib1wzoaTeg&s=09"
+                href="https://github.com/kartikpatil28/IEEEJCE"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transform hover:scale-110 transition-transform duration-300 no-underline"
               >
                 <i className="fab fa-github text-2xl text-white hover:text-gray-300"></i>
+              </a>
+              {/* YouTube Icon */}
+              <a
+                href="http://www.youtube.com/@IEEE_JCE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform hover:scale-110 transition-transform duration-300 no-underline"
+                aria-label="YouTube"
+              >
+                <i className="fab fa-youtube text-2xl text-red-600 hover:text-red-400"></i>
               </a>
             </div>
           </div>

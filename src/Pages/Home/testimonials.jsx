@@ -2,38 +2,42 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-// Testimonial Component
+// Enhanced Testimonial Card UI
 const Testimonial = ({ name, affiliation, text, imgSrc }) => {
   return (
-    <div className="my-8">
-      <div className="bg-black p-6 rounded-lg shadow-lg border border-gray-800 hover:border-0 transition duration-300 relative group overflow-hidden">
-        {/* Rainbow border on hover */}
-        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" 
-             style={{
-               background: "linear-gradient(to right, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff)",
-               mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-               maskComposite: "exclude",
-               WebkitMaskComposite: "xor",
-               maskClip: "padding-box, border-box",
-               padding: "1px",
-               pointerEvents: "none"
-             }}>
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="my-8"
+    >
+      <div
+        className="relative group overflow-hidden rounded-2xl p-8 bg-black/70 backdrop-blur-md border border-blue-700/40 shadow-[0_0_24px_2px_rgba(59,130,246,0.18)] transition duration-300"
+        style={{ boxShadow: '0 0 24px 2px rgba(59,130,246,0.18), 0 4px 24px rgba(0,0,0,0.5)' }}
+      >
+        {/* Floating quote icon */}
+        <div className="absolute top-6 left-6 text-3xl text-blue-500 opacity-20 pointer-events-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 13h6m2 0a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v4a2 2 0 002 2h2m4 0v6m0 0a2 2 0 01-2 2H7a2 2 0 01-2-2v-4a2 2 0 012-2h2" />
+          </svg>
         </div>
-        
-        <p className="text-gray-300 mb-4 text-lg relative z-10">{text}</p>
-        <div className="flex items-center relative z-10">
-          <img 
-            src={imgSrc || "/api/placeholder/60/60"} 
-            alt={name} 
-            className="w-12 h-12 rounded-full mr-3 object-cover"
+        {/* Subtle blue accent line */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-blue-400 to-transparent opacity-60 rounded-t-2xl" />
+        <p className="text-gray-200 mb-6 text-lg font-medium italic relative z-10">“{text}”</p>
+        <div className="flex items-center relative z-10 mt-6">
+          <img
+            src={imgSrc || "/api/placeholder/60/60"}
+            alt={name}
+            className="w-14 h-14 rounded-full mr-4 object-cover ring-2 ring-blue-400 shadow-md"
           />
           <div>
-            <h4 className="text-white font-semibold">{name}</h4>
-            <p className="text-blue-400 text-sm">{affiliation}</p>
+            <h4 className="text-white font-semibold text-base leading-tight">{name}</h4>
+            <p className="text-blue-400 text-xs font-medium leading-tight">{affiliation}</p>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -54,13 +58,13 @@ const testimonials = [
   {
     name: "Chaitra K",
     affiliation: "Electronics and Communication Engineering",
-    text: "The hands-on workshops were a highlight of my IEEE journey. From IoT to basic circuit design, I explored topics that weren’t deeply covered in class. It made learning exciting",
+    text: "The hands-on workshops were a highlight of my IEEE journey. From IoT to basic circuit design, I explored topics that weren't deeply covered in class. It made learning exciting",
     imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093418/Chaitra_o5ulkp.webp"
   },
   {
     name: "Abhishek",
     affiliation: "Electronics and Communication Engineering",
-    text: "Through IEEE, I found out about an internship opportunity shared during a club meeting. It was my first step into practical experience, and I wouldn’t have known about it otherwise.",
+    text: "Through IEEE, I found out about an internship opportunity shared during a club meeting. It was my first step into practical experience, and I wouldn't have known about it otherwise.",
     imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093420/Abhishek_t8kgjx.webp"
   },
   {
@@ -88,7 +92,7 @@ const moreTestimonials = [
   {
     name: "Shreedhar",
     affiliation: "Electronics and Communication Engineering",
-    text: "What kept me hooked to IEEE was the consistency—every month had something new to look forward to. A bootcamp here, a workshop there, it kept me curious and engaged.”",
+    text: "What kept me hooked to IEEE was the consistency—every month had something new to look forward to. A bootcamp here, a workshop there, it kept me curious and engaged.",
     imgSrc: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093417/Shreedhar_rj3apb.webp"
   },
   {

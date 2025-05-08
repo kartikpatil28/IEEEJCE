@@ -81,7 +81,7 @@ const Contact = () => {
               <h3 className="text-xl font-semibold text-white mb-4">Connect With Us</h3>
               <div className="flex space-x-4">
                 <a 
-                  href="https://www.linkedin.com/company/ieee-jce?trk=feed-detail_main-feed-card_feed-actor-nam" 
+                  href="                                                                                                                                                                                                                                                                        " 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition-all duration-300"

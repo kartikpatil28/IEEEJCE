@@ -27,7 +27,7 @@ const allImages = [
   },
   {
     source:"https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093383/Conference-15_r8jnc8.webp",
-    title: "Research Presentation",
+    title: "Conference",
     description: "Sharing innovative research findings",
     category: "Technical Events",
   },
@@ -94,55 +94,9 @@ const allImages = [
 ];
 
 const Gallery = () => {
-  // Featured images (first 4 only)
-  const featuredImages = allImages.slice(0, 4);
-  
   // State for lightbox functionality
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
-  const [activeFilter, setActiveFilter] = useState("All");
-  const [isLoading, setIsLoading] = useState(false);
-  const [animationClass, setAnimationClass] = useState("");
-
-  // Categories for filtering - dynamically generated from image data
-  const allCategories = [
-    "All",
-    ...new Set(allImages.map((img) => img.category)),
-  ];
-  const categoryIcons = {
-    All: <FaThLarge className="mr-2" />,
-    "WIE Events": <FaStar className="mr-2 text-pink-500" />,
-    "Career Development": <FaStar className="mr-2 text-green-500" />,
-    "Technical Events": <FaStar className="mr-2 text-blue-500" />,
-    "Campus to Coorporate": <FaStar className="mr-2 text-yellow-500" />,
-    "IEEE Events": <FaStar className="mr-2 text-indigo-500" />,
-    "Sensor Conference": <FaStar className="mr-2 text-purple-500" />,
-    "Special Events": <FaStar className="mr-2 text-red-500" />,
-  };
-
-  // Filtered images based on active category
-  const filteredImages = activeFilter === "All" 
-    ? allImages 
-    : allImages.filter((img) => img.category === activeFilter);
-
-  // Handle category change with animation
-  const handleCategoryChange = (category) => {
-    if (category === activeFilter) return;
-    
-    setIsLoading(true);
-    setAnimationClass("opacity-0 translate-y-4");
-    
-    setTimeout(() => {
-      setActiveFilter(category);
-      setIsLoading(false);
-      setTimeout(() => setAnimationClass("opacity-100 translate-y-0"), 50);
-    }, 300);
-  };
-
-  // Initialize animation on mount
-  useEffect(() => {
-    setTimeout(() => setAnimationClass("opacity-100 translate-y-0"), 100);
-  }, []);
 
   // Slider settings
   const sliderSettings = {
@@ -186,9 +140,9 @@ const Gallery = () => {
   // Navigate through lightbox images
   const navigateLightbox = (direction) => {
     if (direction === "next") {
-      setCurrentImage((currentImage + 1) % filteredImages.length);
+      setCurrentImage((currentImage + 1) % allImages.length);
     } else {
-      setCurrentImage((currentImage - 1 + filteredImages.length) % filteredImages.length);
+      setCurrentImage((currentImage - 1 + allImages.length) % allImages.length);
     }
   };
 
@@ -204,7 +158,7 @@ const Gallery = () => {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [lightboxOpen, currentImage, filteredImages.length]);
+  }, [lightboxOpen, currentImage, allImages.length]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
@@ -215,155 +169,47 @@ const Gallery = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      {/* Header */}
+      {/* Simple Header/Hero */}
       <div className="relative text-center mb-16 pt-20 px-4">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50"></div>
         <span className="inline-block mb-4 px-4 py-1 bg-indigo-500/20 text-indigo-300 rounded-full font-medium text-sm backdrop-blur-sm border border-indigo-500/30 animate-fadeIn">
-          Explore & Discover
+          Gallery
         </span>
         <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 mb-6 animate-fadeInUp">
-          IEEE Gallery
+          IEEE JCE Moments
         </h1>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fadeInUp delay-200">
-          Showcasing our journey of innovation, learning, and growth through
-          memorable events and activities
+          A visual journey through our events, achievements, and vibrant student life.
         </p>
       </div>
 
-      {/* Featured Slider */}
-      <div className="mb-24 px-4 relative">
-        <div className="flex items-center mb-8">
-          <div className="h-10 w-1 bg-gradient-to-b from-indigo-500 to-purple-500 rounded-full mr-3"></div>
-          <h2 className="text-2xl font-bold text-white">Featured Highlights</h2>
-        </div>
-        {/* Custom horizontal scrollable carousel */}
-        <div className="flex gap-8 overflow-x-auto pb-4 hide-scrollbar snap-x snap-mandatory">
-          {featuredImages.map((item, index) => (
+      {/* Immersive Gallery Grid */}
+      <div className="px-4 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {allImages.map((item, index) => (
             <div
               key={index}
-              className="relative min-w-[320px] md:min-w-[480px] h-[28rem] md:h-[32rem] rounded-3xl overflow-hidden shadow-2xl border border-indigo-500/30 bg-gradient-to-br from-gray-900/80 via-indigo-900/60 to-black/80 snap-center group transform hover:scale-105 transition-transform duration-500 animate-fadeInUp"
-              style={{ flex: '0 0 auto' }}
+              className="group relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-white/5 backdrop-blur-lg transition-transform duration-500 hover:scale-105 hover:shadow-3xl cursor-pointer"
+              onClick={() => openLightbox(index)}
+              style={{ WebkitBackdropFilter: 'blur(8px)', backdropFilter: 'blur(8px)' }}
             >
               <img
                 src={item.source}
                 alt={item.title}
-                className="absolute inset-0 w-full h-full object-cover scale-110 group-hover:scale-125 transition-transform duration-700"
-                loading="lazy"
+                className="w-full h-56 object-cover object-center transition-transform duration-700 group-hover:scale-110 group-hover:shadow-xl group-hover:brightness-110"
+                loading={index < 8 ? 'eager' : 'lazy'}
+                style={{ imageRendering: 'auto' }}
               />
-              {/* Glassmorphism overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent backdrop-blur-xl z-10"></div>
-              {/* Animated event tag */}
-              <span className="absolute top-6 left-6 px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-full text-xs font-semibold shadow-lg border border-white/10 animate-fadeInUp z-20">
-                {item.category}
-              </span>
-              {/* Card content */}
-              <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-20 flex flex-col">
-                <h3 className="text-3xl md:text-4xl font-bold text-white mb-3 drop-shadow-lg animate-fadeInUp">
-                  {item.title}
-                </h3>
-                <p className="text-white/90 text-lg md:text-xl max-w-2xl animate-fadeInUp delay-200">
-                  {item.description}
-                </p>
-                <button
-                  className="mt-6 self-start px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 hover:shadow-indigo-500/30 transition-all duration-300 animate-fadeInUp delay-300"
-                  onClick={() => openLightbox(index)}
-                >
-                  View Gallery
-                </button>
-              </div>
-              {/* Futuristic animated border */}
-              <div className="absolute inset-0 pointer-events-none z-30">
-                <div className="w-full h-full rounded-3xl border-2 border-indigo-500/30 group-hover:border-indigo-400/80 transition-all duration-500 animate-pulse"></div>
+              {/* Soft gradient overlay for contrast */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+              {/* Overlay on hover */}
+              <div className="absolute inset-0 flex flex-col justify-end p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-white font-bold text-lg mb-1 drop-shadow-lg">{item.title}</h3>
+                <p className="text-white/80 text-sm">{item.description}</p>
               </div>
             </div>
           ))}
         </div>
-        {/* Hide scrollbar utility */}
-        <style jsx>{`
-          .hide-scrollbar::-webkit-scrollbar { display: none; }
-          .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        `}</style>
-      </div>
-
-      {/* Gallery Section */}
-      <div className="px-4 relative">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6 sticky top-4 z-30 bg-gray-900/80 backdrop-blur-md rounded-xl shadow-lg p-4 border border-gray-700/50 transform hover:scale-[1.01] transition-transform duration-300">
-          <div className="flex items-center">
-            <div className="h-10 w-1 bg-gradient-to-b from-indigo-500 to-purple-500 rounded-full mr-3"></div>
-            <h2 className="text-2xl font-bold text-white flex items-center">
-              <FaFilter className="mr-2 text-indigo-400" />Gallery Collection
-            </h2>
-          </div>
-
-          {/* Filter buttons */}
-          <div className="flex flex-wrap gap-2 w-full md:w-auto">
-            {allCategories.map((category) => (
-              <button
-                key={category}
-                onClick={() => handleCategoryChange(category)}
-                className={`flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all duration-300
-                  ${activeFilter === category
-                    ? "bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-lg shadow-indigo-500/20 scale-105"
-                    : "bg-gray-800/50 text-gray-300 hover:bg-gray-700/50 border border-gray-700/50 hover:border-indigo-500/50"
-                  }
-                `}
-              >
-                {categoryIcons[category] || <FaStar className="mr-2" />} {category}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Masonry Gallery grid */}
-        <div className={`columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 transition-all duration-300 ${animationClass}`}>
-          {isLoading ? (
-            Array(8).fill(0).map((_, i) => (
-              <div key={i} className="rounded-xl overflow-hidden bg-gray-800/50 animate-pulse h-72 mb-6 border border-gray-700/50"></div>
-            ))
-          ) : (
-            filteredImages.map((item, index) => (
-              <div
-                key={index}
-                className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2 cursor-pointer mb-6 animate-fadeInUp border border-gray-700/50"
-                style={{ breakInside: 'avoid' }}
-                onClick={() => openLightbox(index)}
-              >
-                <div className="h-72 overflow-hidden relative">
-                  <img
-                    src={item.source}
-                    alt={item.title}
-                    className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                    <span className="inline-block mb-2 px-3 py-1 bg-white/10 backdrop-blur-sm text-white rounded-full text-xs font-medium border border-white/20">
-                      {item.category}
-                    </span>
-                    <h3 className="text-white font-bold text-xl">{item.title}</h3>
-                    <p className="text-white/80 text-sm mt-2">{item.description}</p>
-                    <div className="flex gap-2 mt-4">
-                      <button className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 opacity-90 group-hover:opacity-100">
-                        View
-                      </button>
-                      <button className="p-2 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white/20 transition-colors duration-200 border border-white/20">
-                        <FaHeart className="w-4 h-4" />
-                      </button>
-                      <button className="p-2 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white/20 transition-colors duration-200 border border-white/20">
-                        <FaShare className="w-4 h-4" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))
-          )}
-        </div>
-
-        {filteredImages.length === 0 && !isLoading && (
-          <div className="text-center py-12">
-            <p className="text-lg text-gray-400">No images found for this category.</p>
-          </div>
-        )}
       </div>
 
       {/* Lightbox */}
@@ -387,7 +233,7 @@ const Gallery = () => {
 
             {/* Counter & Keyboard Hints */}
             <div className="absolute -top-16 left-0 text-white/70 flex items-center gap-4">
-              <span>{currentImage + 1} / {filteredImages.length}</span>
+              <span>{currentImage + 1} / {allImages.length}</span>
               <span className="hidden md:inline text-xs bg-white/10 px-2 py-1 rounded-full ml-2 border border-white/20">
                 ←/→ arrows, Esc to close
               </span>
@@ -396,8 +242,8 @@ const Gallery = () => {
             {/* Image */}
             <div className="relative">
               <img
-                src={filteredImages[currentImage].source}
-                alt={filteredImages[currentImage].title}
+                src={allImages[currentImage].source}
+                alt={allImages[currentImage].title}
                 className="max-h-[80vh] mx-auto object-contain rounded-lg shadow-2xl"
               />
 
@@ -420,7 +266,7 @@ const Gallery = () => {
               {/* Action buttons */}
               <div className="absolute bottom-4 right-4 flex gap-2">
                 <a
-                  href={filteredImages[currentImage].source}
+                  href={allImages[currentImage].source}
                   download
                   target="_blank"
                   rel="noopener noreferrer"
@@ -447,13 +293,13 @@ const Gallery = () => {
             {/* Caption */}
             <div className="text-center mt-6">
               <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-sm text-white rounded-full mb-2 text-sm border border-white/20">
-                {filteredImages[currentImage].category}
+                {allImages[currentImage].category}
               </span>
               <h3 className="text-white text-2xl font-bold">
-                {filteredImages[currentImage].title}
+                {allImages[currentImage].title}
               </h3>
               <p className="text-white/80 mt-2 max-w-2xl mx-auto">
-                {filteredImages[currentImage].description}
+                {allImages[currentImage].description}
               </p>
             </div>
           </div>
