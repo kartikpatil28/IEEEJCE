@@ -10,6 +10,7 @@ import {
   FaLightbulb,
   FaGraduationCap,
   FaArrowRight,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 
 import Team from "../team/team";
@@ -27,6 +28,45 @@ const MotionWrapper = ({ children, delay = 0, className = "" }) => (
     {children}
   </motion.div>
 );
+
+// INCET Announcement Banner Component
+const INCETAnnouncement = () => {
+  return (
+    <div className="w-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-3 px-4 shadow-lg">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
+        <div className="flex items-center">
+          <div className="bg-white/20 p-2 rounded-full mr-3">
+            <FaCalendarAlt className="text-white" />
+          </div>
+          <div>
+            <h3 className="font-bold text-lg md:text-xl">
+              6th International Conference on Emerging Technologies (INCET 2025)
+            </h3>
+            <p className="text-sm md:text-base opacity-90">
+              May 22-24, 2025 | Jain College of Engineering, Belagavi
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center gap-3 mt-2 md:mt-0">
+          <a
+            href="https://www.incet.org/important-dates/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-white text-blue-700 font-semibold rounded-md hover:bg-gray-100 transition-colors flex items-center"
+          >
+            Important Dates <FaExternalLinkAlt className="ml-2" />
+          </a>
+          <Link
+            to="/incet-2025"
+            className="px-4 py-2 bg-indigo-800 text-white font-semibold rounded-md hover:bg-indigo-900 transition-colors flex items-center"
+          >
+            Learn More <FaArrowRight className="ml-2" />
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 // Stats data with icons - Refined Icon styling consistency
 const stats = [
@@ -55,9 +95,9 @@ const stats = [
 // Upcoming events
 const events = [
   {
-    name: "INCET",
-    date: "MAY 21, 2025",
-    description: "Research paper submission and presentation",
+    name: "INCET 2025",
+    date: "MAY 22-24, 2025",
+    description: "International Conference on Emerging Technologies - Paper presentations and research discussions",
   },
   {
     name: "Mini Hackathon 2025",
@@ -702,6 +742,8 @@ const Home = () => {
 
   return (
     <div className="font-sans bg-gray-50 min-h-screen">
+      {/* INCET Announcement Banner at the very top */}
+      <INCETAnnouncement />
       <HeroSection />
       <AboutSection />
       <StatsSection />
