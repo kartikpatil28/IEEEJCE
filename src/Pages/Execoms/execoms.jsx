@@ -167,7 +167,7 @@ const Execoms = () => {
       ieeeNumber: "100768599",
       mobileNo: "+91 7676333799",
       sem: "4th",
-      division: "A",
+      division: "D",
       email: "saniya345gijoni@gmail.com",
       category: "aess"
     },

@@ -190,10 +190,10 @@ const Footer = () => {
         <div className="text-center text-white text-sm mt-12 pt-8 border-t border-gray-700">
           <div className="flex flex-col items-center space-y-2">
             <p className="text-lg">
-              &copy; {new Date().getFullYear()} All rights reserved JCE IEEE
+              &copy; {new Date().getFullYear()} All rights reserved IEEE JCE
             </p>
             <p className="text-white">
-              Made with <span className="text-red-500">❤️</span> by JCE IEEE Web Team 2025
+              Made with <span className="text-red-500">❤️</span> by IEEE JCE Web Team 2025
             </p>
             <p className="text-white">
               Address: #599/2 T.S. Nagar Hunchanhatti Road Macche Belagavi 590014
