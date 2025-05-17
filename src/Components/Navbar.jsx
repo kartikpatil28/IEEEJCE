@@ -66,7 +66,7 @@ function Navbar() {
       {/* IEEE Global Navigation Bar */}
       <div className="w-full bg-black text-sm border-b border-gray-800 py-2">
         <div className="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
-          <ul className="hidden md:flex flex-wrap items-center gap-4 text-gray-300 text-xs">
+          <ul className="hidden md:flex flex-wrap items-center gap-2 lg:gap-4 text-gray-300 text-xs lg:text-sm">
             {ieeeLinks.map((link, index) => (
               <li key={index} className="group relative">
                 {link.name === "More Sites" ? (
@@ -99,7 +99,7 @@ function Navbar() {
           <a href="https://www.ieee.org" target="_blank" rel="noopener noreferrer">
             <img
               src="https://th.bing.com/th/id/R.2f05fde9d13625128ae97420e975fba0?rik=nVfgCJV%2bu72Lrg&riu=http%3a%2f%2ftttc-vts.org%2fpublic_html%2fnew%2f2017%2fwp-content%2fuploads%2fieee-logo_blue-banner.png&ehk=mZvXsGP%2fI0c4UyHy8qzx1rYdXd3yKv2fG7HCkmGkKqk%3d&risl=&pid=ImgRaw&r=0"
-              className="h-8 md:h-10 object-contain"
+              className="h-6 md:h-8 lg:h-10 object-contain"
               alt="IEEE Logo"
             />
           </a>
@@ -108,7 +108,7 @@ function Navbar() {
 
       {/* Main Navigation */}
       <nav
-        className={`w-full sticky top-0 z-50 transition-all duration-300 px-4 md:px-6 py-3 ${
+        className={`w-full sticky top-0 z-50 transition-all duration-300 px-4 md:px-6 py-2 md:py-3 ${
           scrolled ? "bg-black/95 backdrop-blur-lg shadow-lg" : "bg-black"
         }`}
         aria-label="Main Navigation"
@@ -122,20 +122,20 @@ function Navbar() {
             <img
               src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093403/JCE-logo_tqphb8.png"
               alt="JCE Logo"
-              className="h-16 sm:h-14 md:h-16 object-contain hover:brightness-110 transition-all duration-300"
+              className="h-12 sm:h-14 md:h-16 lg:h-20 object-contain hover:brightness-110 transition-all duration-300"
             />
           </NavLink>
 
           {/* Desktop Links */}
           <div className="hidden lg:flex items-center space-x-1">
-            <ul className="flex items-center gap-1 text-white font-medium text-base">
+            <ul className="flex items-center gap-1 text-white font-medium text-sm lg:text-base">
               {links.map((link) => (
                 <li key={link.name}>
                   <NavLink
                     to={link.path}
                     onClick={() => handleLinkClick(link.path)}
                     className={({ isActive }) =>
-                      `px-4 py-2 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 no-underline ${
+                      `px-3 lg:px-4 py-2 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 no-underline ${
                         isActive
                           ? "text-white bg-blue-700/20 shadow"
                           : "text-white hover:bg-blue-700/10 hover:text-blue-400"
@@ -150,7 +150,7 @@ function Navbar() {
               {/* Societies Dropdown */}
               <li className="relative group">
                 <button
-                  className={`px-4 py-2 rounded-full flex items-center transition-all duration-300 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                  className={`px-3 lg:px-4 py-2 rounded-full flex items-center transition-all duration-300 text-sm lg:text-base focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                     isSocietiesOpen || activeSociety
                       ? "text-white bg-blue-700/20 shadow"
                       : "text-white hover:bg-blue-700/10 hover:text-blue-400"
@@ -187,7 +187,7 @@ function Navbar() {
                         <button
                           key={society.name}
                           onClick={() => handleSocietiesClick(society.path, society.name)}
-                          className={`block w-full text-left px-4 py-2 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                          className={`block w-full text-left px-4 py-2 text-sm lg:text-base focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                             activeSociety === society.name
                               ? "text-white bg-blue-700/30"
                               : "text-white hover:bg-blue-700/20 hover:text-blue-400"
@@ -206,13 +206,15 @@ function Navbar() {
 
           {/* Mobile Hamburger */}
           <button
-            className="lg:hidden flex items-center px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-700/20 focus:outline-none"
+            className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-blue-400 focus:outline-none transition-all duration-300"
             onClick={toggleMenu}
-            aria-label="Open main menu"
+            aria-label="Toggle menu"
           >
-            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+            <div className="relative w-6 h-6">
+              <span className={`absolute block w-6 h-0.5 bg-current transform transition-all duration-300 ease-in-out ${isMenuOpen ? 'rotate-45 translate-y-2.5' : '-translate-y-1.5'}`}></span>
+              <span className={`absolute block w-6 h-0.5 bg-current transform transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+              <span className={`absolute block w-6 h-0.5 bg-current transform transition-all duration-300 ease-in-out ${isMenuOpen ? '-rotate-45 translate-y-2.5' : 'translate-y-1.5'}`}></span>
+            </div>
           </button>
         </div>
 
@@ -224,17 +226,17 @@ function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.2 }}
-              className="lg:hidden absolute left-0 right-0 top-full bg-black shadow-xl rounded-b-xl px-4 py-6 z-40"
+              className="lg:hidden absolute left-0 right-0 top-full bg-black/95 backdrop-blur-lg shadow-xl rounded-b-xl px-4 py-4 z-40"
             >
-              <div className="max-h-[70vh] overflow-y-auto px-4 py-6">
-                <ul className="flex flex-col gap-2 text-white font-medium text-lg">
+              <div className="max-h-[80vh] overflow-y-auto px-2 py-4">
+                <ul className="flex flex-col gap-1 text-white font-medium text-lg">
                   {links.map((link) => (
                     <li key={link.name}>
                       <NavLink
                         to={link.path}
                         onClick={() => handleLinkClick(link.path)}
                         className={({ isActive }) =>
-                          `block px-4 py-3 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 no-underline ${
+                          `block px-4 py-3 rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 no-underline ${
                             isActive
                               ? "text-white bg-blue-700/20 shadow"
                               : "text-white hover:bg-blue-700/10 hover:text-blue-400"

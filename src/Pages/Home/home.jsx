@@ -145,6 +145,11 @@ const societies = [
 const galleryImages = [
   {
     id: 1,
+    src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1747476944/IMG_6094_b5uwap.webp",
+    alt: "Industrial Visit to U R Rao Satellite Center(URSC), ISRO",
+  },
+  {
+    id: 1,
     src: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093394/Campus-to-Corporate-15_gjyf9c.webp",
     alt: "Campus to Corporate",
   },
@@ -204,28 +209,26 @@ const SectionTitle = ({ title, subtitle, light = false }) => {
 // Replace the HeroSection with a new editorial, two-column layout
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
-    {/* Remove animated gradient blob for a cleaner look */}
-    <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-20 md:py-0 gap-12 md:gap-0 relative z-10">
+    <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-6 py-16 md:py-0 gap-8 md:gap-0 relative z-10">
       {/* Left: Text Content */}
       <div className="flex-1 flex flex-col justify-center items-start z-10 text-left max-w-xl">
-        <h1 className="text-[2.8rem] sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-none text-white mb-4 drop-shadow-xl" style={{fontFamily: 'Montserrat, Arial, sans-serif', letterSpacing: '-0.04em', textShadow: '0 4px 24px rgba(0,0,0,0.7)'}}>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none text-white mb-4 drop-shadow-xl" style={{fontFamily: 'Montserrat, Arial, sans-serif', letterSpacing: '-0.04em', textShadow: '0 4px 24px rgba(0,0,0,0.7)'}}>
           IEEE<br />
           <span className="text-blue-400">STUDENT BRANCH</span>
         </h1>
-        <h2 className="text-2xl sm:text-3xl font-light text-white mb-6 tracking-wide drop-shadow-lg" style={{fontFamily: 'Montserrat, Arial, sans-serif', textShadow: '0 2px 12px rgba(0,0,0,0.6)'}}>Jain College of Engineering, Belagavi</h2>
-        <p className="text-lg text-blue-100 mb-8 max-w-md drop-shadow" style={{textShadow: '0 1px 8px rgba(0,0,0,0.5)'}}>
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-light text-white mb-6 tracking-wide drop-shadow-lg" style={{fontFamily: 'Montserrat, Arial, sans-serif', textShadow: '0 2px 12px rgba(0,0,0,0.6)'}}>Jain College of Engineering, Belagavi</h2>
+        <p className="text-base sm:text-lg text-blue-100 mb-8 max-w-md drop-shadow" style={{textShadow: '0 1px 8px rgba(0,0,0,0.5)'}}>
           A vibrant community of innovators, leaders, and learners. Join us to connect, collaborate, and grow in technology and beyond.
         </p>
         <Link
           to="/about"
-          className="inline-block px-8 py-3 text-lg font-semibold rounded-full bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-xl hover:from-blue-600 hover:to-blue-800 hover:shadow-blue-400/60 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-400/40"
+          className="inline-block px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg font-semibold rounded-full bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-xl hover:from-blue-600 hover:to-blue-800 hover:shadow-blue-400/60 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-400/40"
         >
           See More
         </Link>
       </div>
       {/* Right: Group Image */}
-      <div className="flex-1 flex items-center justify-center relative w-full md:w-auto h-[400px] md:h-[600px] max-h-[80vh]">
-        {/* Only a subtle blue overlay for vibrancy, no pink/purple */}
+      <div className="flex-1 flex items-center justify-center relative w-full md:w-auto h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] max-h-[80vh]">
         <div className="absolute inset-0 bg-gradient-to-l from-black/70 via-transparent to-blue-900/10 z-10 rounded-2xl" />
         <img
           src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093349/Execom-1_nx7odq.webp"
@@ -235,15 +238,126 @@ const HeroSection = () => (
         />
       </div>
     </div>
-    {/* Subtle vignette overlay for drama */}
     <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80 z-20" />
   </section>
 );
 
+// New ISRO Visit Highlight Section
+const ISROVisitHighlight = () => {
+  return (
+    <section className="py-16 md:py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-32 left-1/2 w-[500px] h-[500px] bg-indigo-500/10 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 md:px-6 relative">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="bg-gradient-to-br from-gray-900/95 to-black/95 rounded-3xl overflow-hidden shadow-2xl backdrop-blur-sm border border-gray-800/50"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+            {/* Left: Image with overlay */}
+            <div className="relative h-[400px] md:h-[600px] group">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent z-10"></div>
+              <img
+                src="https://res.cloudinary.com/dkztwdo8h/image/upload/v1747476944/IMG_6094_b5uwap.webp"
+                alt="IEEE AESS Industrial Visit to ISRO"
+                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute bottom-6 left-6 z-20">
+                <div className="bg-blue-600/90 backdrop-blur-sm text-white px-4 py-1.5 rounded-full text-sm font-medium shadow-lg">
+                  Latest Event
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Content */}
+            <div className="p-8 md:p-12 lg:p-16 flex flex-col justify-center bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm">
+              <div className="space-y-6">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="inline-block px-4 py-1.5 bg-blue-600/20 rounded-full text-blue-400 text-sm font-medium border border-blue-500/20"
+                >
+                  IEEE AESS Society
+                </motion.div>
+                
+                <motion.h2 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight"
+                >
+                  Industrial Visit to{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
+                    U R Rao Satellite Center
+                  </span>
+                </motion.h2>
+
+                <motion.p 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  className="text-gray-300 text-lg leading-relaxed"
+                >
+                  Our IEEE AESS Society members had the incredible opportunity to visit the U R Rao Satellite Center, 
+                  where they witnessed cutting-edge space technology and learned about satellite development processes.
+                </motion.p>
+
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                  className="flex flex-wrap gap-4 pt-2"
+                >
+                  <div className="flex items-center gap-2 text-gray-300 bg-gray-800/50 px-4 py-2 rounded-lg backdrop-blur-sm">
+                    <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span>May 15, 2025</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-300 bg-gray-800/50 px-4 py-2 rounded-lg backdrop-blur-sm">
+                    <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span>URSC, ISRO</span>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                >
+                  <Link
+                    to="/events"
+                    className="inline-flex items-center mt-6 px-6 py-3 bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 rounded-lg font-medium transition-all duration-300 group border border-blue-500/20"
+                  >
+                    View Event Details
+                    <FaArrowRight className="ml-2 transform group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
 // About Section Component
 const AboutSection = () => {
   return (
-    <section className="py-16 md:py-24 px-6 bg-white">
+    <section className="py-12 md:py-16 lg:py-24 px-4 md:px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <SectionTitle
           title={
@@ -254,7 +368,7 @@ const AboutSection = () => {
           subtitle="Building a community of future innovators and technology leaders through knowledge sharing and professional development."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           <MotionWrapper delay={0.2} className="group">
             <div className="rounded-xl overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
               <img
@@ -266,12 +380,12 @@ const AboutSection = () => {
           </MotionWrapper>
 
           <MotionWrapper delay={0.4}>
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               <div>
-                <h3 className="text-3xl font-semibold text-gray-800 mb-4">
+                <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-3 md:mb-4">
                   Our Mission
                 </h3>
-                <p className="text-gray-700 text-lg leading-relaxed">
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   The IEEE Student Branch at JCE is dedicated to fostering
                   technological innovation and excellence. We provide students
                   with opportunities for networking, hands-on learning, and professional
@@ -280,10 +394,10 @@ const AboutSection = () => {
               </div>
 
               <div>
-                <h3 className="text-3xl font-semibold text-gray-800 mb-6">
+                <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4 md:mb-6">
                   What We Offer
                 </h3>
-                <ul className="space-y-4">
+                <ul className="space-y-3 md:space-y-4">
                   {[
                     { icon: FaLightbulb, text: "Engaging technical workshops and hands-on sessions" },
                     { icon: FaUsers, text: "Valuable industry connections and networking events" },
@@ -291,8 +405,8 @@ const AboutSection = () => {
                     { icon: FaBell, text: "Access to IEEE's vast resources and publications" }
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
-                      <item.icon className="text-blue-600 mt-1 mr-4 flex-shrink-0" size={24} />
-                      <span className="text-gray-700 text-lg">
+                      <item.icon className="text-blue-600 mt-1 mr-3 md:mr-4 flex-shrink-0" size={20} />
+                      <span className="text-base md:text-lg text-gray-700">
                         {item.text}
                       </span>
                     </li>
@@ -302,7 +416,7 @@ const AboutSection = () => {
 
               <Link
                 to="/about"
-                className="inline-flex items-center mt-6 px-8 py-3 text-lg font-semibold rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
+                className="inline-flex items-center mt-4 md:mt-6 px-6 md:px-8 py-2 md:py-3 text-base md:text-lg font-semibold rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
               >
                 Learn More About Us
                 <FaArrowRight className="ml-2" />
@@ -574,19 +688,19 @@ const JoinSection = () => {
 
       <div className="max-w-6xl mx-auto relative">
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
-          <div className="relative p-8 md:p-12">
+          <div className="relative p-6 md:p-12">
             {/* Decorative Elements */}
             <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-blue-500 rounded-full opacity-10"></div>
             <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-indigo-500 rounded-full opacity-10"></div>
 
-            <div className="relative flex flex-col md:flex-row items-center gap-12">
+            <div className="relative flex flex-col md:flex-row items-center gap-8 md:gap-12">
               <div className="md:w-2/3">
                 <motion.h2
                   initial={{ opacity: 0, y: -20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="text-4xl md:text-5xl font-bold text-white mb-6"
+                  className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6"
                 >
                   Join IEEE Today
                 </motion.h2>
@@ -595,7 +709,7 @@ const JoinSection = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="text-blue-100 text-lg mb-8 leading-relaxed"
+                  className="text-blue-100 text-base md:text-lg mb-6 md:mb-8 leading-relaxed"
                 >
                   Become a part of the world's largest technical professional
                   organization for the advancement of technology. Gain access to
@@ -672,12 +786,12 @@ const MobileEventsPanel = ({ showEventsPanel, setShowEventsPanel }) => {
     <div className="fixed bottom-4 right-4 z-50 md:hidden">
       <motion.button
         onClick={() => setShowEventsPanel(!showEventsPanel)}
-        className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+        className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-3 md:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         aria-label="Toggle Events Panel"
       >
-        <FaBell size={20} />
+        <FaBell size={18} className="md:w-5 md:h-5" />
       </motion.button>
 
       <AnimatePresence>
@@ -687,7 +801,7 @@ const MobileEventsPanel = ({ showEventsPanel, setShowEventsPanel }) => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="absolute bottom-16 right-0 bg-white rounded-2xl shadow-2xl w-80 overflow-hidden border border-gray-100"
+            className="absolute bottom-16 right-0 bg-white rounded-2xl shadow-2xl w-[90vw] max-w-[320px] overflow-hidden border border-gray-100"
           >
             <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-4">
               <h3 className="text-lg font-bold text-white flex items-center">
@@ -745,6 +859,7 @@ const Home = () => {
       {/* INCET Announcement Banner at the very top */}
       <INCETAnnouncement />
       <HeroSection />
+      <ISROVisitHighlight />
       <AboutSection />
       <StatsSection />
       <SocietiesSection />

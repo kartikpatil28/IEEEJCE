@@ -8,6 +8,12 @@ import { FaFilter, FaStar, FaThLarge, FaDownload, FaChevronLeft, FaChevronRight,
 const allImages = [
   // WIE Women's Day Events
   {
+    source: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1747476944/IMG_6094_b5uwap.webp",
+    title: "Industrial Visit to U R Rao Satellite Center(URSC), ISRO",
+    description: "A fascinating visit to U R Rao Satellite Center, gaining insights into the world of space technology",
+    category: "AESS Events",
+  },
+  {
     source: "https://res.cloudinary.com/dkztwdo8h/image/upload/v1744093350/WIE_WD_1_lzivwg.webp",
     title: "Women's Day Celebration",
     description: "Celebrating International Women's Day with inspiring talks",

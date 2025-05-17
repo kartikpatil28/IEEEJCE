@@ -47,14 +47,14 @@ const AboutPage = () => {
       </div>
 
       {/* About Section with Floating Card Design */}
-      <div className="max-w-7xl mx-auto px-6 md:px-10 py-16 relative">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 py-12 md:py-16 relative">
         <div className="absolute w-64 h-64 bg-blue-500 rounded-full opacity-5 -top-10 -left-10"></div>
         
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="bg-gray-800 bg-opacity-70 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-2xl border border-gray-700 flex flex-col md:flex-row gap-12 relative overflow-hidden"
+          className="bg-gray-800 bg-opacity-70 backdrop-blur-sm rounded-2xl p-6 md:p-12 shadow-2xl border border-gray-700 flex flex-col md:flex-row gap-8 md:gap-12 relative overflow-hidden"
         >
           {/* Left Side: Image with Overlay */}
           <div className="w-full md:w-1/2 relative">
@@ -65,7 +65,7 @@ const AboutPage = () => {
               transition={{ duration: 0.8 }}
               src="https://www.targetadmission.com/img/colleges/newc/14283-383362.jpg"
               alt="IEEE JCE Student Branch"
-              className="rounded-lg shadow-2xl relative z-10 w-full h-full object-cover"
+              className="rounded-lg shadow-2xl relative z-10 w-full h-[250px] md:h-full object-cover"
             />
             <div className="absolute bottom-4 right-4 bg-blue-600 text-white py-1 px-3 rounded-full text-sm font-bold">Since 2015</div>
           </div>
@@ -112,9 +112,9 @@ const AboutPage = () => {
       </div>
 
       {/* Statistics Section - Redesigned with Cards */}
-      <div className="py-20 px-6 md:px-20">
+      <div className="py-12 md:py-20 px-4 md:px-20">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -127,7 +127,7 @@ const AboutPage = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl md:text-4xl font-bold"
+              className="text-2xl md:text-4xl font-bold"
             >
               By The Numbers
             </motion.h2>
